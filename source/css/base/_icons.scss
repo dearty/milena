@@ -1,0 +1,30 @@
+.arrow {
+
+	&:after,
+	&:before {
+	  content: '';
+	  position: absolute;
+	  top: 80px;
+	  // bottom: -10px;
+	  border-style: solid;
+	  height: 0;
+	  width: 0;
+	  position: absolute;
+	  pointer-events: none;
+
+	}
+	&:before {
+	  border-color: transparent;
+	  border-top-color: $primary-color;
+	  border-width: 15px 15px 0 15px;
+	  left: 50%;
+	  margin-left: -15px;
+	}
+	&:after {
+	  border-color: transparent;
+	  border-top-color: #fafafa;
+	  border-width: 14px 14px 0 14px;
+	  left:50%;
+	  margin-left: -14px;
+	}
+}

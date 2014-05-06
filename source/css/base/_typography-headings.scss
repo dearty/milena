@@ -1,0 +1,94 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $heading-color;
+	// text-transform: uppercase;
+	font-weight: 400;
+	// font-weight: 600;
+	// font-weight: bold;
+	// font-style:italic;
+	font-family: $alt-font-family;
+	line-height: 1;
+	text-rendering: optimizeLegibility;
+	// transform: rotate(-0.0000000001deg);
+	// -webkit-font-smoothing: antialiased;
+	// -moz-osx-font-smoothing: grayscale;
+	// text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	
+}
+
+
+h1 {
+	font-size:40px;
+
+
+	// letter-spacing:.02em;
+}
+
+h2 {
+	// margin-bottom: 1.5em;
+	font-size:42px;
+	// line-height: .9;
+	// text-transform: uppercase;
+	// color:#636363;
+	// font-weight: 600;
+	// font-style:italic;
+	
+	// letter-spacing:.02em;
+	@include mq($bp5) {
+		font-size:50px;
+	}
+	
+	
+}
+
+h3 {
+
+	font-size:28px;
+	// font-style:italic;
+	// padding-bottom: 2em;
+	// text-transform: uppercase;
+	// font-family: $base-font-family;
+	// font-weight: bold;
+	
+	// color:$secondary-color;
+	// color:#276287;
+	@include mq($bp4){
+		font-size:32px;
+	}
+	// color:#fff;
+}
+
+
+h4 {
+	font-size:16px;
+	// text-transform: uppercase;
+	// margin-bottom: 1em;
+	
+	// font-weight: 600;
+	// color:$secondary-color;
+	// color: #3d6d77;
+	// font-weight: bold;
+	font-family: $base-font-family;
+}
+
+h5 {
+	font-size:em(16);
+	// @include mq($bp3b){
+	// 	font-size:em(14);
+	// }
+	// @include mq($bp4){
+	// 	// font-size:em(24);
+	// }
+	// @include mq($bp5){
+	// 	font-size:em(16);
+	// }
+
+}
+
+
+
+

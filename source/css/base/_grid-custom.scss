@@ -1,0 +1,45 @@
+.row {
+	width: 100%;
+	margin:0 auto;
+	@include clearfix;
+}
+
+.col  {
+	display: block;
+	float: left;
+	margin-left: 2%;
+}
+
+.col:first-child {
+	margin-left: 0;
+}
+
+.grid-4 {
+	width:23.5%;
+}
+.grid-3 {
+	width:32%;
+}
+.grid-2 {
+	width: 49%;
+}
+
+.grid-1-of-4 {
+	width: 23.5%;
+}
+
+.grid-2-of-4 {
+	width: 49%;
+}
+
+.grid-3-of-4 {
+	width: 74.5%;
+}
+
+.grid-2-of-3 {
+	width: 66%;
+}
+
+.grid-1-of-3 {
+	width: 32%;
+}

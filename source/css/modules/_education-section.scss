@@ -1,0 +1,154 @@
+$align: left;
+
+.section-education {
+	h3 {	
+		padding:2em 0 1em;
+		text-align: $align;
+		white-space:pre-wrap;
+		line-height: 1.2;
+		font-size:26px;
+		position: relative;
+		text-align: center;
+		border-bottom: 1px solid #f1f1f1;
+		// border-top:1px solid #d8d8d8;
+	}
+}
+
+.section-education-title {
+	
+	border-top:1px solid #d8d8d8;
+	// background:#fff;
+	// background:lighten(#F4F1ED,2)
+	
+	
+}
+
+.education-list {
+	padding: 2em;
+	
+	@include mq($bp1){
+		// width:75%;
+		max-width:700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	@include mq($bp4){
+
+		display: table;
+		width: 100%;
+		max-width:900px !important;
+		padding: 0;
+		margin-top: 4em;
+		margin-bottom: 4em;
+		background:url(/images/kola.svg) center center no-repeat;
+		border-collapse:collapse;
+		
+	}
+}
+
+.education-list-row {
+	@include mq($bp4) {
+		display: table-row;
+		width: 100%;
+		height:300px;	
+		&:first-child {
+			border-bottom: 1px solid #d8d8d8;
+		}
+	}
+	
+}
+
+.education-item {
+	// margin:30px;
+	// padding-left: 30px;
+	// padding-right: 30px;
+	position: relative;
+	transition:background 0.2s;
+	&:hover {
+		// background:#fff;
+
+	}
+	@include mq($bp4) {
+		display: table-cell;
+		
+		vertical-align: top;
+		width: 50%;
+		// text-align: center;
+		&:first-child {
+			border-right:1px solid #d8d8d8;
+		}
+	}
+}
+
+.education-item p,
+.education-item h4 {
+	padding-left: 50px;
+	padding-right: 20px;
+	@include mq($bp4){
+		padding-left: 60px;
+		padding-right:20px;
+	}
+
+}
+
+.education-item p {
+	// font-family: $alt-font-family;
+	font-size:16px;
+	// color:#515151;
+	@include mq($bp4){
+		// max-width:350px;
+		
+		text-align: $align;
+		// margin:0 auto;		
+	}
+	
+
+}
+
+.education-item h4 {
+	position: relative;
+	font-weight: 600;
+	padding-top:40px;
+	padding-bottom: 20px;
+	font-size:20px;
+	// border-bottom:1px solid $primary-color;
+	// padding-left: 110px;
+	
+
+	@include mq($bp4) {
+		text-align: $align;
+		padding-left: 110px;
+	}
+}
+
+.icon:before {
+	content:'';
+	position: absolute;
+	left: 0;
+	top:34px;
+	width: 34px;
+	height: 34px;
+	@include mq($bp4){
+
+		left: 60px;
+		
+	}
+}
+
+
+.icon-slowa:before {
+	background: transparent url(/images/icon-slowa.svg) 0 0  no-repeat;
+}
+
+.icon-osobowosc:before {
+	background: transparent url(/images/icon-osobowosc.svg) 0 0  no-repeat;
+}
+
+.icon-inwestycja:before {
+	background: transparent url(/images/icon-inwestycja.svg) 0 0  no-repeat;
+}
+
+.icon-rozmowa:before {
+	background: transparent url(/images/icon-rozmowa.svg) 0 0  no-repeat;
+}
+

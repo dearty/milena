@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0 (7574) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 1</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M20,40 C31.045695,40 40,31.045695 40,20 C40,8.954305 31.045695,0 20,0 C8.954305,0 0,8.954305 0,20 C0,31.045695 8.954305,40 20,40 Z M30,20 C30,20.5787746 29.7989659,21.0849687 29.3968978,21.5185824 L18.7737226,32.3822874 C18.3716545,32.7940958 17.8829075,33 17.3074818,33 C16.732056,33 16.243309,32.7940958 15.8412409,32.3822874 L14.6031022,31.1309755 C14.2010341,30.6973618 14,30.1911677 14,29.6123931 C14,29.0230273 14.2010341,28.5224403 14.6031022,28.1106319 L22.5218978,20 L14.6031022,11.9061893 C14.2010341,11.4725757 14,10.9663815 14,10.3876069 C14,9.7982412 14.2010341,9.29765413 14.6031022,8.88584573 L15.8412409,7.63453382 C16.2323601,7.21151127 16.7211071,7 17.3074818,7 C17.8938564,7 18.3826034,7.21151127 18.7737226,7.63453382 L29.3968978,18.4982388 C29.7989659,18.9100472 30,19.4106343 30,20 Z" id="Oval-5" fill="#F72C8C" sketch:type="MSShapeGroup" transform="translate(20.000000, 20.000000) scale(-1, 1) translate(-20.000000, -20.000000) "></path>
+        <g id="icon-chevron-right2-link" sketch:type="MSLayerGroup" transform="translate(19.000000, 20.000000) scale(-1, 1) translate(-19.000000, -20.000000) translate(11.000000, 7.000000)">
+            <g id="icon-chevron-right2"></g>
+        </g>
+    </g>
+</svg>

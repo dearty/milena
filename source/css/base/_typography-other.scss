@@ -1,0 +1,63 @@
+p {
+	margin: 0 0 1em;
+	@include mq($bp5){
+		// font-size:em(18);
+	}
+}
+
+
+b,
+strong {
+	font-weight: bold;
+}
+
+
+ul,
+ol {
+	list-style: none;
+
+}
+
+.ul-inline {
+	display: inline-block;
+	li {
+		display: inline-block;
+		margin-right: .2em;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+
+blockquote {
+    font-style:italic;
+    border-left: 1px solid gray;
+    color: gray;
+	padding-left: 1em;
+	margin-bottom: 1em;
+}
+
+
+dl {
+	margin-bottom: 1em;
+}
+
+.dl-inline {
+	dd {
+		display: inline;
+		margin: 0;
+	}
+	dd:after {
+		display: block;
+		content:"";
+	}
+	dt {
+		display: inline-block;
+		min-width:100px;
+	}
+}
+
+dt {
+	color:#000;
+}

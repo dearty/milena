@@ -1,0 +1,36 @@
+ // 1. Remove the gray background color from active links in IE 10 
+a {
+	
+	background: transparent; // 1 */
+	// color: $link-color;
+	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	outline: none; //
+	color:inherit;
+
+}
+
+a:hover {
+	color:$primary-color;
+	// text-decoration: underline;
+}
+
+// Improve readability when focused or hovered in all browsers
+a:active,
+a:hover {
+	outline: 0;
+}
+
+a:active {
+	// color:tint($link-color,20);
+}
+
+
+
+
+
+// Address `outline` inconsistency between Chrome and other browsers
+// a:focus {
+// 	outline: thin dotted;
+// 	color:indigo;
+// }

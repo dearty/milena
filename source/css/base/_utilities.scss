@@ -1,0 +1,156 @@
+//clearfix 
+.group {
+	@include clearfix;
+}
+
+
+.block {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	max-width: $max-width;
+
+	@include clearfix;
+
+
+}
+
+
+.wrap {
+
+	// @include mq($bp3) {
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		max-width:1100px;
+		padding-left:60px;
+		padding-right:60px;
+	// }
+	@include mq($bp4){
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+}
+
+.bg {
+    background: $nav-color url(/images/bg.png) 0 0 repeat;
+
+}
+
+img {
+// width:100%;
+max-width : 100%; //pozniej zmienic na container
+border-width : 0;
+vertical-align : middle;
+-ms-interpolation-mode : bicubic; }
+
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+.a-right {
+	text-align: right;
+}
+
+.a-center {
+	text-align: center;
+}
+
+
+hr {
+	margin: 0;
+	// height:10px;
+	border:0;
+	// width: 100%;
+	
+}
+
+.hr-top,
+.hr-bottom {
+	display: none;	
+	@include mq($bp3){
+		display: block;
+		background-color:#000;
+		border-bottom: 2px solid #fff;
+		position:fixed;
+		top: 2em;
+		height:10px;	
+		width:32%;
+		z-index:500;
+	}
+
+}
+
+.hr-divider {
+	margin-left: auto;
+	margin-right: auto;
+	background-color:$primary-color;
+	height:5px;
+	margin-bottom: 1em;
+	margin-bottom: 16px;
+	width:50px;
+	@include mq($bp3){
+		margin-left: 0;
+	}
+}
+
+.hr-thin {
+	height:2px;
+	margin-bottom: .5em;
+	width:30px;
+	margin-left: 60px;
+}
+
+.hr-section {
+	height:4px;
+	background:url(/images/bg-divider2.png) 0 0 repeat;
+}
+
+.hr-top-section {
+	display: none;
+	height:5px;
+	margin-bottom: 0;
+	@extend .bg;
+	@include mq($bp3) {
+		display: block;
+		background-color:$nav-color;
+	}	
+}
+
+.v-center-content {
+	display: table;
+	width: 100%;
+}
+
+.v-center {
+	@include mq($bp3){
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+
+::-webkit-input-placeholder {
+   color:#aaa;
+}
+
+// :-moz-placeholder { /* Firefox 18- */
+//    color:#aaa; 
+// }
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color:#aaa;
+}
+
+:-ms-input-placeholder {  
+   color:#aaa;
+}
+
+
+  
