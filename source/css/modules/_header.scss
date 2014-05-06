@@ -55,7 +55,7 @@ $nav-side: left;
     overflow-y: auto;
     z-index:2;
     transition:all .5s;
-    background: #2d2d2d url(/images/kola2.svg) bottom -70px right no-repeat;
+    background: #eee url(/images/kola2.svg) bottom -70px right no-repeat;
   }
   @include mq($bp4){
     width: 250px;
@@ -97,7 +97,7 @@ $nav-side: left;
   vertical-align: middle;
   padding: 0;
   img {
-    height:34px;
+    height:40px;
     width:auto;
   }
   @include mq($bp3) {
@@ -108,12 +108,12 @@ $nav-side: left;
     // border-left:2px solid $primary-color;
     // padding:6px 20px;
     img {
-      height: 34px;
+      height: 40px;
     }
   }
   @include mq($bp4) {
    img {
-      height: 40px;
+      height: 44px;
     } 
   }
 }
