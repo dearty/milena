@@ -56,6 +56,10 @@ $nav-side: left;
     z-index:2;
     transition:all .5s;
     background: #2d2d2d url(/images/kola2.svg) bottom -70px right no-repeat;
+    background: #fff url(/images/kola.svg) bottom -70px right no-repeat;
+    background:#F8F6F3;
+    // background:#fff url(/images/bg.png) 0 0 repeat;
+    // border-right:1px solid #d8d8d8;
   }
   @include mq($bp4){
     width: 250px;

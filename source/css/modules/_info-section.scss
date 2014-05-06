@@ -1,29 +1,25 @@
 html {
 	// background:transparent url(/images/pobrane.svg) 0 0 no-repeat ;	
 	// 	background-size:cover;
-
+	// background:#F8F6F3;
 	@include mq($bp3){
 
-		background:transparent url(/images/pobrane3.png) right center no-repeat fixed ;	
+		background:transparent url(/images/pobrane3.png) center center no-repeat fixed ;	
 		background-size:cover;
+
 	}
-	@include mq($bp4) {
-		// background-position:center center;
-	}
+
 }
 
 html.touch {
 	background:none;
 }
 
-body {
-	// overflow: scroll;
-	// -webkit-overflow-scrolling: touch;
-}
+
 
 .touch .section-info {
 	@include mq($bp3){
-		background:transparent url(/images/pobrane3.png) right center no-repeat;	
+		background:transparent url(/images/pobrane3.png) center center no-repeat;	
 		background-size:cover;
 	}
 }
@@ -45,6 +41,7 @@ body {
 		vertical-align: middle;
 		width: 100%;
 		height:100%;
+
 		
 	}
 }
