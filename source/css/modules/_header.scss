@@ -1,5 +1,5 @@
 $header-small-height: 75px;
-$nav-side: right;
+$nav-side: left;
 
 #inner-wrap {
   position: relative;
@@ -13,7 +13,7 @@ $nav-side: right;
   top:0;
   #{$nav-side}: 0;
   // color:#fff;
-  text-align: right;
+  text-align: left;
   z-index:1000;
   // background-color:darken(#3d3d3d,10);
   
@@ -49,13 +49,13 @@ $nav-side: right;
     #{$nav-side}: 0;
     width:210px;  
     background:#fff;
-    padding-left: 10px;  //do zmiany
-    border-left:1px solid #f1f1f1;
+    padding-right: 10px;  //do zmiany
+    // border-left:1px solid #f1f1f1;
     bottom: 0;
     overflow-y: auto;
     z-index:2;
     transition:all .5s;
-    background: #fff url(/images/kola.svg) bottom -70px right no-repeat;
+    background: #eee url(/images/kola2.svg) bottom -70px right no-repeat;
   }
   @include mq($bp4){
     width: 250px;
@@ -113,7 +113,7 @@ $nav-side: right;
   }
   @include mq($bp4) {
    img {
-      height: 50px;
+      height: 44px;
     } 
   }
 }

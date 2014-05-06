@@ -4,11 +4,11 @@ html {
 
 	@include mq($bp3){
 
-		background:transparent url(/images/pobrane3.png) left center no-repeat fixed ;	
+		background:transparent url(/images/pobrane3.png) right center no-repeat fixed ;	
 		background-size:cover;
 	}
 	@include mq($bp4) {
-		background-position:center center;
+		// background-position:center center;
 	}
 }
 
@@ -23,7 +23,7 @@ body {
 
 .touch .section-info {
 	@include mq($bp3){
-		background:transparent url(/images/pobrane3.png) left center no-repeat;	
+		background:transparent url(/images/pobrane3.png) right center no-repeat;	
 		background-size:cover;
 	}
 }
