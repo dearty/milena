@@ -39,7 +39,7 @@ h2 {
 	
 	// letter-spacing:.02em;
 	@include mq($bp5) {
-		font-size:50px;
+		font-size:56px;
 	}
 	
 	
@@ -48,6 +48,10 @@ h2 {
 h3 {
 
 	font-size:28px;
+	padding-top: 1em;
+	padding-bottom: 1.5em;
+	border-top: 8px solid #3d3d3d;
+	border-bottom: 1px solid #3d3d3d;
 	// font-style:italic;
 	// padding-bottom: 2em;
 	// text-transform: uppercase;

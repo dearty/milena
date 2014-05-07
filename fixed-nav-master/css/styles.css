@@ -1,3 +1,38 @@
+/* =============================================
+ *
+ *   FIXED RESPONSIVE NAV
+ *
+ *   (c) 2014 @adtileHQ
+ *   http://www.adtile.me
+ *   http://twitter.com/adtilehq
+ *
+ *   Free to use under the MIT License.
+ *
+ * ============================================= */
+
+body, div,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
+fieldset, form, label, legend, th, td,
+article, aside, figure, footer, header, hgroup, menu, nav, section,
+summary, hgroup {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+
 /* ------------------------------------------
   RESPONSIVE NAV STYLES
 --------------------------------------------- */
@@ -42,7 +77,7 @@
   user-select: none;
 }
 
-@media screen and (min-width: $bp4) {
+@media screen and (min-width: 40em) {
   .js .nav-collapse {
     position: relative;
   }
@@ -55,50 +90,58 @@
 }
 
 
+/* ------------------------------------------
+  DEMO STYLES
+--------------------------------------------- */
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #37302a;
+  background: #fff;
+  font: normal 100%/1.4 sans-serif;
+}
+
+section {
+  border-bottom: 1px solid #999;
+  text-align: center;
+  padding: 100px 0 0;
+  height: 800px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: .5em;
+}
+
+p {
+  width: 90%;
+  margin: 0 auto;
+}
+
 
 /* ------------------------------------------
   FIXED HEADER
 --------------------------------------------- */
 
 header {
-  background: #3d3d3d;
-  background: rgba(#3d3d3d,.9);
+  background: #f4421a;
   position: fixed;
   z-index: 3;
   width: 100%;
   left: 0;
   top: 0;
-  // box-shadow:0 2px 3px rgba(#000,.2);
 }
-
-.header--inner {
-  @include mq($bp4){
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-    // padding-left:40px;
-    // padding-right: 40px  
-  }
-  
-}
-
 
 .logo {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   text-decoration: none;
+  font-weight: bold;
+  line-height: 55px;
   padding: 0 20px;
+  color: #fff;
   float: left;
-  // display: inline-block;
-  // vertical-align: middle;
-  img{
-    height: 65px;  
-    padding: 1em 0;
-  }
-  @include mq($bp3){
-    padding: 0;
-
-  }
-  
 }
 
 
@@ -119,10 +162,6 @@ header {
   right: 0;
   left: 0;
   top: 0;
-  @include mq($bp4){
-    display: none !important;
-    opacity: 0 !important;
-  }
 }
 
 .android .mask {
@@ -135,67 +174,93 @@ header {
   opacity: 1;
 }
 
+@media screen and (min-width: 40em) {
+  .mask {
+    display: none !important;
+    opacity: 0 !important;
+  }
+}
 
 
 /* ------------------------------------------
   NAVIGATION STYLES
 --------------------------------------------- */
 
+.fixed {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.nav-collapse,
+.nav-collapse * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .nav-collapse,
 .nav-collapse ul {
+  list-style: none;
   width: 100%;
-  display: block;
-  @include mq($bp4){
+  float: left;
+}
+
+@media screen and (min-width: 40em) {
+  .nav-collapse {
     float: right;
     width: auto;
   }
 }
 
-
 .nav-collapse li {
-  display: block;
+  float: left;
   width: 100%;
-  &:last-child a{
-    color:$primary-color;
-  }
-  @include mq($bp4) {
-    display: inline-block;
+}
+
+@media screen and (min-width: 40em) {
+  .nav-collapse li {
     width: auto;
   }
 }
-
 
 .nav-collapse a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   border-top: 1px solid white;
   text-decoration: none;
-  font-size:14px;
-  padding: 1em 0.5em;
-  color: #ccc;
+  background: #f4421a;
+  padding: 0.7em 1em;
+  color: #fff;
   width: 100%;
-  display: block;
-  line-height: 40px;
-  &:hover {
-    color:#fff;
-  }
-  @include mq($bp4){ 
-    padding: 1em;
-    text-align: center;
-    border-top: 0;
-    margin: 0;
-  }
-  span {
-    @include mq($bp4){
-      // display: block;
-    }
-  }
+  float: left;
 }
-
-
 
 .nav-collapse a:active,
 .nav-collapse .active a {
-  background: #5d5d5d;
+  background: #b73214;
+}
+
+@media screen and (min-width: 40em) {
+  .nav-collapse a {
+    border-left: 1px solid white;
+    padding: 1.02em 2em;
+    text-align: center;
+    border-top: 0;
+    float: left;
+    margin: 0;
+  }
+}
+
+.nav-collapse ul ul a {
+  background: #ca3716;
+  padding-left: 2em;
+}
+
+@media screen and (min-width: 40em) {
+  .nav-collapse ul ul a {
+    display: none;
+  }
 }
 
 
@@ -203,6 +268,16 @@ header {
   NAV TOGGLE STYLES
 --------------------------------------------- */
 
+@font-face {
+  font-family: "responsivenav";
+  src:url("../icons/responsivenav.eot");
+  src:url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"),
+    url("../icons/responsivenav.ttf") format("truetype"),
+    url("../icons/responsivenav.woff") format("woff"),
+    url("../icons/responsivenav.svg#responsivenav") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .nav-toggle {
   -webkit-font-smoothing: antialiased;
@@ -218,8 +293,7 @@ header {
 
 .nav-toggle:before {
   color: #fff; /* Edit this to change the icon color */
-  font: normal 38px/55px "responsivenav"; /* Edit font-size (28px) to change the icon size */
-  font:normal 28px/55px;
+  font: normal 28px/55px "responsivenav"; /* Edit font-size (28px) to change the icon size */
   text-transform: none;
   text-align: center;
   position: absolute;
@@ -235,3 +309,8 @@ header {
   font-size: 24px;
   content: "\78"; /* Close icon */
 }
+
+
+
+
+

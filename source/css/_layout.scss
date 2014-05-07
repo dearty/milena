@@ -1,4 +1,8 @@
-
+.section-proces,
+.section-klienci,
+.section-kontakt {
+	height: 500px;
+}
 
 .content {
 	position: relative;
@@ -17,7 +21,7 @@
 		// border-right: 20px solid #fff;
 
 		// margin-#{$nav-side}: 250px;
-		margin-#{$nav-side}: 210px;
+		// margin-#{$nav-side}: 210px;
 		height: 100%;
 		// padding-left: 10px;
 		// padding-right: 10px;
@@ -27,7 +31,7 @@
 		transition:all .5s;
 	}
 	@include mq($bp4){
-		margin-#{$nav-side}: 250px;
+		// margin-#{$nav-side}: 250px;
 	}
 }
 

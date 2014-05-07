@@ -2,16 +2,17 @@ $align: left;
 
 .section-education {
 	h3 {	
-		padding:2em 0 1em;
+		// padding:2em 0 1em;
 		text-align: $align;
 		white-space:pre-wrap;
 		line-height: 1.2;
-		font-size:26px;
-		font-size:32px;
+		// font-size:26px;
+		// font-size:32px;
 		position: relative;
 		text-align: center;
-		border-top:8px solid #2d2d2d;
-		border-bottom: 1px solid #d8d8d8;
+		padding-bottom: 0
+		// border-top:8px solid #2d2d2d;
+		// border-bottom: 1px solid #d8d8d8;
 		// border-top:1px solid #d8d8d8;
 	}
 }

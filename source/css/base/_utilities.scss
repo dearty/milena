@@ -100,8 +100,8 @@ hr {
 .hr-divider {
 	margin-left: auto;
 	margin-right: auto;
-	background-color:$primary-color;
-	height:5px;
+	// background-color:$primary-color;
+	// height:5px;
 	margin-bottom: 1em;
 	margin-bottom: 16px;
 	width:50px;
@@ -134,8 +134,10 @@ hr {
 }
 
 .v-center-content {
-	display: table;
-	width: 100%;
+	@include mq($bp3){
+		display: table;
+		width: 100%;
+	}	
 }
 
 .v-center {

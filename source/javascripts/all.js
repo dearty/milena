@@ -1,13 +1,17 @@
-//=require "nav.js"
-//=require "tabs.js"
+//=require "responsive-nav.js"
+//=require "fastclick.js"
 //=require "scroll.js"
-//=require "scrollspy.js"
+//=require "fixed-responsive-nav.js"
 
-$('.aha').click(function(e){
-	$('.header').toggleClass('ahas');
-	$('.content').toggleClass('ahasa');
-	e.preventDefault();
-});
+//=require "tabs.js"
 
 
-$('.nav').find('li').first().addClass('nav-active');
+
+// $('.aha').click(function(e){
+// 	$('.header').toggleClass('ahas');
+// 	$('.content').toggleClass('ahasa');
+// 	e.preventDefault();
+// });
+
+
+// $('.nav').find('li').first().addClass('nav-active');

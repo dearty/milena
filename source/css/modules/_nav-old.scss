@@ -1,0 +1,252 @@
+$header-small-height: 75px;
+
+
+#inner-wrap {
+  // position: relative;
+  // width: 100%;
+}
+
+////////////////////////////
+
+.header {
+  @include mq($bp3) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:30%;
+    height:100%;
+    background:$header-color;
+  }
+  @media screen and (max-height: em(600)) {
+    // position: absolute;
+    // height: 100%;
+  }
+
+}
+
+.header-inner,
+.contact-info {
+  @include mq($bp3) {
+    // background:tint($header-color,10);
+    position: relative;
+    
+    width:85%;
+    max-width:300px;
+    float: right;
+    padding: 1em;
+    padding-top: 2em;
+    padding-right: 0;
+  } 
+}
+
+.header-inner {
+  @include mq($bp3){
+    height: 90%;
+  }
+
+}
+.contact-info {
+  @include mq($bp3){
+    height: 10%;
+    padding-bottom: 1em;
+  }
+}
+
+
+.logo-wrapper {
+  z-index: 1;
+  height:$header-small-height;
+  position: relative;
+  background: $header-color;
+  display: table;
+  width:100%;
+  @include mq($bp3) {
+    background:transparent;
+    padding-right: 1em;
+    height:20%;
+  }
+}
+.logo-wrapper .logo {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  img {
+    height:30px;
+    width:auto;
+  }
+  @include mq($bp3) {
+    text-align: left;
+    img {
+      height: 50px;
+    }
+  }
+}
+
+.logo-wrapper .nav-btn {
+  position: absolute;
+  top: 1.5em;
+  left: 1em;
+  // z-index:200;
+}
+
+.nav {
+  @include mq($bp3) {
+    height: 70%;
+  }
+  
+}
+
+
+.nav-inner {
+  padding-top: $header-small-height;
+  @include mq($bp3){
+    // padding-top: 7em;
+    padding-top: 10%;
+  }
+}
+
+//////////////////////
+
+#nav {
+  position: absolute;
+  z-index: 200;
+  top: 0;
+  // padding-top:2em;
+  // color:$header-link;
+  width: 100%;
+  overflow: hidden;
+  @include mq($bp3) {
+    position: relative;
+  }
+}
+
+.no-js #nav ul {
+  // background:$header-color;
+}
+
+#nav li {
+  display: block;
+}
+#nav li a {
+  display: block;
+  padding:.5em 1em;
+  color: $header-link;
+  outline: none;
+  text-transform: uppercase;
+  &:focus,
+  &:hover {
+    color: #fff;
+    background: #73C2D0;
+  }
+}
+
+#nav li.is-active a {
+  color: #fff;
+  background: #73C2D0;
+}
+
+.blog-link {
+  // display: inline-block;
+  // width: 100px;
+  margin-top: 3em;
+  // border-top:1px solid black;
+}
+
+
+//mobile
+@media screen and (max-width: $bp3) {
+ 
+  #nav:not(:target) {
+    z-index: 1;
+    height: 0;
+  }
+  #nav:target .close-btn {
+    display: block;
+  }
+  #nav .close-btn {
+    position: absolute;
+    top: 1.5em;
+    left: 1em;
+  }
+
+
+  .js-ready #nav {
+    left:-70%;
+    height: 100%;
+    width: 70%;
+    background: $header-color;
+    border-right: 5px solid #fff;
+  }
+
+  .js-ready #nav .close-btn {
+    display: block;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
+  }
+  .js-ready #nav .close-btn:focus,
+  .js-ready #nav .close-btn:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+
+
+  .js-ready #inner-wrap {
+    left: 0;
+  }
+
+  .js-nav #inner-wrap {
+    left: 70%;
+  }
+
+  .csstransforms3d.csstransitions.js-ready #nav {
+    left: 0;
+
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .csstransforms3d.csstransitions.js-ready #inner-wrap {
+    left: 0 !important;
+
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+
+    -webkit-transition: -webkit-transform 500ms ease;
+    transition: transform 500ms ease;
+    
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .csstransforms3d.csstransitions.js-nav #inner-wrap {
+    -webkit-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
+    transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
+  }
+
+  .csstransforms3d.csstransitions.js-ready .nav-inner {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
+
+    -webkit-transition: opacity 300ms 100ms, -webkit-transform 500ms ease;
+    -webkit-transition-delay: ease, 0s;
+    transition: opacity 300ms 100ms ease, transform 500ms ease;
+    
+    -webkit-transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
+    transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
+   
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+
+  .csstransforms3d.csstransitions.js-nav .nav-inner {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+//buttons
