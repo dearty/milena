@@ -294,3 +294,4 @@ $('.aha').click(function(e){
 });
 
 
+$('.nav').find('li').first().addClass('nav-active');

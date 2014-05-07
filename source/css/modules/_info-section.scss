@@ -4,12 +4,14 @@ html {
 	// background:#F8F6F3;
 	@include mq($bp3){
 
-		background:transparent url(/images/pobrane3.png) center center no-repeat fixed ;	
-		background-size:cover;
-
+		// background:transparent url(/images/pobrane3.png) center center no-repeat fixed ;	
+		// background-size:cover;
+		
 	}
 
 }
+
+
 
 html.touch {
 	background:none;
@@ -19,8 +21,8 @@ html.touch {
 
 .touch .section-info {
 	@include mq($bp3){
-		background:transparent url(/images/pobrane3.png) center center no-repeat;	
-		background-size:cover;
+		// background:transparent url(/images/pobrane3.png) center center no-repeat;	
+		// background-size:cover;
 	}
 }
 
@@ -48,7 +50,7 @@ html.touch {
 
 
 .hero-wrap {
-	padding-bottom: 5em;
+	padding-bottom: 7em;
 	
 }
 
