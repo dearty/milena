@@ -6,34 +6,19 @@
 
 .content {
 	position: relative;
-	// padding:0 1em;
-	
-	// height:3000px;
 	@include mq($bp3){	
-		// border:10px solid $secondary-color;
-		// border-top-width: 20px;
-		// border-bottom-width:20px;
-		// border-right:7px solid tint($secondary-color,10);
-		// border-left:7px solid tint($secondary-color,10);
-		// background:url(/images/bg-test.png) 60% 10% no-repeat fixed;
-		// background-size:contain;
-		// border-left: 20px solid #fff;
-		// border-right: 20px solid #fff;
-
-		// margin-#{$nav-side}: 250px;
-		// margin-#{$nav-side}: 210px;
 		height: 100%;
-		// padding-left: 10px;
-		// padding-right: 10px;
-		// margin-right: 10px;s
-		// border-left:10px solid #fff;
-		// border-right:10px solid #fff;
 		transition:all .5s;
 	}
-	@include mq($bp4){
-		// margin-#{$nav-side}: 250px;
-	}
 }
+
+.no-touch .content {
+	z-index:2;
+	top: 100%;
+	left: 0;
+	width: 100%;
+}
+
 
 .triangle-top {
 	@include mq($bp3) {

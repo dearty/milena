@@ -39,7 +39,8 @@ h2 {
 	
 	// letter-spacing:.02em;
 	@include mq($bp5) {
-		font-size:56px;
+		font-size:50px;
+		font-size:40px;
 	}
 	
 	
@@ -47,11 +48,23 @@ h2 {
 
 h3 {
 
-	font-size:28px;
+	font-size:24px;
 	padding-top: 1em;
 	padding-bottom: 1.5em;
-	border-top: 8px solid #3d3d3d;
-	border-bottom: 1px solid #3d3d3d;
+	// border-top: 8px solid #3d3d3d;
+	border-bottom: 1px solid #d8d8d8;
+	position: relative;
+		&:before {
+			content: "";
+		    position: absolute;
+		    // z-index: -1;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    border-bottom: 1px solid darken(#f0e7d3,30);
+		}
+
 	// font-style:italic;
 	// padding-bottom: 2em;
 	// text-transform: uppercase;
@@ -60,8 +73,8 @@ h3 {
 	
 	// color:$secondary-color;
 	// color:#276287;
-	@include mq($bp4){
-		font-size:40px;
+	@include mq($bp5){
+		font-size:30px;
 	}
 	// color:#fff;
 }

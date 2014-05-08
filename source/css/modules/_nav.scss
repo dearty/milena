@@ -61,13 +61,13 @@
 --------------------------------------------- */
 
 header {
-  background: #3d3d3d;
-  background: rgba(#3d3d3d,.9);
+  background: #fff;
   position: fixed;
   z-index: 3;
   width: 100%;
   left: 0;
   top: 0;
+  border-bottom:1px solid #d8d8d8;
   // box-shadow:0 2px 3px rgba(#000,.2);
 }
 
@@ -76,7 +76,7 @@ header {
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
-    // padding-left:40px;
+    padding-left:60px;
     // padding-right: 40px  
   }
   
@@ -156,7 +156,7 @@ header {
   display: block;
   width: 100%;
   &:last-child a{
-    color:$primary-color;
+    // color:$primary-color;
   }
   @include mq($bp4) {
     display: inline-block;
@@ -169,14 +169,14 @@ header {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   border-top: 1px solid white;
   text-decoration: none;
-  font-size:14px;
+  font-size:15px;
   padding: 1em 0.5em;
-  color: #ccc;
+  // color: #ccc;
   width: 100%;
   display: block;
   line-height: 40px;
   &:hover {
-    color:#fff;
+    color:$primary-color;
   }
   @include mq($bp4){ 
     padding: 1em;
@@ -195,7 +195,8 @@ header {
 
 .nav-collapse a:active,
 .nav-collapse .active a {
-  background: #5d5d5d;
+  // background: #5d5d5d;
+  color:$primary-color;
 }
 
 
