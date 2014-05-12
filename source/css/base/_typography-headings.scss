@@ -48,21 +48,14 @@ h2 {
 
 h3 {
 
-	font-size:24px;
-	padding-top: 1em;
-	padding-bottom: 1.5em;
+	font-size:28px;
+	padding-top: 2em;
+	padding-bottom: 2em;
 	// border-top: 8px solid #3d3d3d;
-	border-bottom: 1px solid #d8d8d8;
-	position: relative;
+	border-bottom: 4px dotted #b8b8b8;
+	// position: relative;
 		&:before {
-			content: "";
-		    position: absolute;
-		    // z-index: -1;
-		    top: 0;
-		    left: 0;
-		    right: 0;
-		    bottom: 0;
-		    border-bottom: 1px solid darken(#f0e7d3,30);
+		
 		}
 
 	// font-style:italic;

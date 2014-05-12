@@ -3,7 +3,7 @@
 //=require "scroll.js"
 //=require "fixed-responsive-nav.js"
 
-//=require "tabs.js"
+//=require "tabs2.js"
 
 
 
