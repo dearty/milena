@@ -23,6 +23,8 @@ $align: left;
 		display: block;
 		// font-family: $alt-font-family;
 		padding: 1em;
+		// padding-top:.5em;
+
 		padding-bottom: 0;
 		font-size:12px;
 		color:#a0a0a0;
@@ -34,7 +36,7 @@ $align: left;
 			// position: absolute;
 			display: inline-block;
 			vertical-align: middle;
-			width: 10%;
+			width: 5%;
 			margin-left:1em;
 			height:1px;
 			// bottom:12px;
@@ -46,7 +48,7 @@ $align: left;
 			display: inline-block;
 			vertical-align: middle;
 			// position: absolute;
-			width: 10%;
+			width: 5%;
 			// left: 0;
 			margin-right:1em;
 			height:1px;
@@ -58,8 +60,12 @@ $align: left;
 	}
 	p {
 		margin-bottom: 0;
-		font-size:16px;
+		font-size:14px;
+		color:#a0a0a0;
 		text-transform: uppercase;
+		@include mq($bp4){
+			font-size:16px;
+		}
 	}
 }
 

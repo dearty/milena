@@ -12,42 +12,46 @@
 
 .uslugi-container {
 	@include mq($bp4){
-		padding: 5em 0;
-	}
-}
-
-.wrap-uslugi {
-	@include mq($bp4){
-		&:nth-of-type(2){	
-			background:#CC2D60;
+		max-width:700px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 5em;
+		// padding: 5em 0;
+		position: relative;
+		&:after {
+			content:'';
+			position: absolute;
+			width:15px;
+			height: 15px;
+			bottom: 0;
+			left: -7px;
+			border-radius:50%;
 			background:$primary-color;
-			background: $primary-color url(/images/kola3.svg) bottom -100px  right -100px no-repeat;
-			background-size:300px;
-			color:#fff;
-			h4 {
-				color:#fff;
-			}
-			.uslugi-box__headline {
-				border-right:4px solid #fff;
-			}
-			.rel:after {
-				background:#fff;
-			}
-			.list li:before {
-				border-color:#fff;
-			}
 		}
 	}
 }
 
 
+
+.wrap-uslugi {
+	// @include mq($bp4){
+	// 	width:100%;
+	// 	&:nth-of-type(2){
+	// 		background:rgba(#fff,.5);
+	// 	}
+	// }
+}
+
 .uslugi-box {
 	display: block;
 	padding: 2em 0;
 	@include mq($bp4){
-		display: table;
-		width: 100%;
+		border-left:1px solid $third-color;
+		// float: right;
+		// width:800px;
 		padding: 0;
+		padding-bottom: 5em;
+
 	}
 
 
@@ -61,9 +65,9 @@
 				width: 30px;
 				height: 30px;
 				position: absolute;
-				top: 30px;
-				right: -17px;
-				right: -33px;
+				top: 16px;
+				left:-16px;
+				// right: -33px;
 				border-radius:50%;
 				background:$primary-color;
 		}
@@ -73,27 +77,31 @@
 .uslugi-box__headline {
 	text-align: center;
 	@include mq($bp4){
-		display: table-cell;
-		position: relative;
-		vertical-align: top;
-		width: 220px;
-		text-align: right;
-		padding-right: 1em;
-		border-right: 4px solid $primary-color;
+		// display: table-cell;
+		// position: relative;
+		// vertical-align: top;
+		// width: 220px;
+		text-align: left;
+		// padding-right: 1em;
+		// border-right: 4px solid $primary-color;
 		
 	}
 	h4 {
-		text-transform: uppercase;
-		font-size:18px;
+		// text-transform: uppercase;
+		font-size:24px;
+		font-family: $alt-font-family;
 		font-weight: 600;	
 		line-height: 1.2;
-		padding: 1em;
+		padding: 20px 40px 30px;
+		// padding-left: 40px;
 		border-bottom:2px dotted #ccc;
 		border-top:4px solid #fff;
 		@include mq($bp4){
-			padding-top: 35px;
-			border-bottom: none;
+			// padding-top: 35px;
+			// border-top: 1px dotted #ccc;
 			border-top: none;
+			border-bottom: none;
+			// border-top: none;
 		}
 	}
 	
@@ -108,7 +116,7 @@
 				padding-top: 5px;
 			}	
 		.uslugi-box__body {
-			padding-top: 2em;
+			// padding-top: 0em;
 		}
 	}
 }
@@ -116,19 +124,23 @@
 
 .uslugi-box__body {
 	margin-top: 3em;
+
+	max-width:650px;
+	margin-left: auto;
+	margin-right: auto;
 	@include mq($bp4){
-		display: table-cell;
 		margin-top: 0;
-		padding: 22px 1em 8em 5em;
-		padding: 4em 1em 4em 5em;
+		margin-left: 24px;
+		border:1px solid $third-color;
+		padding:2em 1em;
 	}
 }
 
 .list {
 	padding-left: 1em;
-	max-width:600px;
-	margin-left: auto;
-	margin-right: auto;
+	// max-width:600px;
+	// margin-left: auto;
+	// margin-right: auto;
 	li{
 		position: relative;
 		padding-left: 30px;
@@ -157,9 +169,9 @@
 }
 
 .list--uslugi {
-	max-width:650px;
-	margin-left: auto;
-	margin-right: auto;
+	// max-width:650px;
+	// margin-left: auto;
+	// margin-right: auto;
 	li {
 		@include mq($bp3){
 			float: left;

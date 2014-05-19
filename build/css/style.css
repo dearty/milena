@@ -490,41 +490,43 @@ h1 {
 /* line 31, /Users/dearty/www-milena/milena/source/css/base/_typography-headings.scss */
 
 h2 {
-  font-size: 42px;
+  font-size: 34px;
   font-weight: 700;
   text-shadow: 0 1px 0 #eeeeee;
+  line-height: 1.1;
 }
 
-@media screen and (min-width: 62.5em) {
+@media screen and (min-width: 80.0625em) {
   /* line 31, /Users/dearty/www-milena/milena/source/css/base/_typography-headings.scss */
 
   h2 {
     font-size: 50px;
+    font-size: 40px;
   }
 }
 
-/* line 43, /Users/dearty/www-milena/milena/source/css/base/_typography-headings.scss */
+/* line 45, /Users/dearty/www-milena/milena/source/css/base/_typography-headings.scss */
 
 h3 {
   font-size: 28px;
 }
 
 @media screen and (min-width: 80.0625em) {
-  /* line 43, /Users/dearty/www-milena/milena/source/css/base/_typography-headings.scss */
+  /* line 45, /Users/dearty/www-milena/milena/source/css/base/_typography-headings.scss */
 
   h3 {
-    font-size: 40px;
+    font-size: 34px;
   }
 }
 
-/* line 58, /Users/dearty/www-milena/milena/source/css/base/_typography-headings.scss */
+/* line 60, /Users/dearty/www-milena/milena/source/css/base/_typography-headings.scss */
 
 h4 {
   font-size: 16px;
   font-family: "Open Sans", "Oswald", "Crimson", "Noto Sans", "Open Sans", "Open Sans", "Source Sans Pro", sans-serif;
 }
 
-/* line 70, /Users/dearty/www-milena/milena/source/css/base/_typography-headings.scss */
+/* line 72, /Users/dearty/www-milena/milena/source/css/base/_typography-headings.scss */
 
 h5 {
   font-size: 1em;
@@ -978,7 +980,7 @@ td {
   user-select: none;
 }
 
-@media screen and (min-width: 62.5em) {
+@media screen and (min-width: 56.25em) {
   /* line 47, /Users/dearty/www-milena/milena/source/css/modules/_nav.scss */
 
   .js .nav-collapse {
@@ -1058,7 +1060,7 @@ header {
   top: 0;
 }
 
-@media screen and (min-width: 62.5em) {
+@media screen and (min-width: 56.25em) {
   /* line 112, /Users/dearty/www-milena/milena/source/css/modules/_nav.scss */
 
   .mask {
@@ -1093,7 +1095,7 @@ header {
   display: block;
 }
 
-@media screen and (min-width: 62.5em) {
+@media screen and (min-width: 56.25em) {
   /* line 148, /Users/dearty/www-milena/milena/source/css/modules/_nav.scss */
 
   .nav-collapse,
@@ -1118,7 +1120,7 @@ header {
   }
 }
 
-@media screen and (min-width: 62.5em) {
+@media screen and (min-width: 56.25em) {
   /* line 158, /Users/dearty/www-milena/milena/source/css/modules/_nav.scss */
 
   .nav-collapse li {
@@ -1147,7 +1149,7 @@ header {
   color: #ff3878;
 }
 
-@media screen and (min-width: 62.5em) {
+@media screen and (min-width: 56.25em) {
   /* line 175, /Users/dearty/www-milena/milena/source/css/modules/_nav.scss */
 
   .nav-collapse a {
@@ -1257,7 +1259,7 @@ header {
   position: relative;
 }
 
-@media screen and (min-width: 62.5em) {
+@media screen and (min-width: 56.25em) {
   /* line 37, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
 
   .hero {
@@ -1267,7 +1269,7 @@ header {
 }
 
 @media screen and (min-width: 40em) and (min-height: 700px) {
-  /* line 60, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
+  /* line 61, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
 
   .no-touch .section-info {
     position: fixed;
@@ -1277,14 +1279,14 @@ header {
   }
 }
 
-/* line 72, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
+/* line 73, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
 
 .info-text {
   font-size: 16px;
 }
 
 @media screen and (min-width: 40em) {
-  /* line 72, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
+  /* line 73, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
 
   .info-text {
     display: table-cell;
@@ -1295,52 +1297,52 @@ header {
 }
 
 @media screen and (min-width: 80.0625em) {
-  /* line 72, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
+  /* line 73, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
 
   .info-text {
     font-size: 18px;
   }
 }
 
-/* line 84, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
+/* line 85, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
 
 .info-text p:nth-of-type(1) {
   margin-bottom: .5em;
   white-space: pre-wrap;
 }
 
-/* line 90, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
+/* line 91, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
 
 .info-text p {
   max-width: 450px;
 }
 
-/* line 95, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
+/* line 96, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
 
 .info-text-title {
   margin-bottom: 1em;
 }
 
-/* line 97, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
+/* line 98, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
 
 .info-text-title > span {
   display: block;
   font-size: 1.3em;
 }
 
-/* line 100, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
+/* line 101, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
 
 .info-text-title > span span {
   color: #ff3878;
 }
 
-/* line 106, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
+/* line 107, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
 
 .highlight {
   font-weight: 600;
 }
 
-/* line 111, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
+/* line 112, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
 
 .info-img {
   position: relative;
@@ -1348,7 +1350,7 @@ header {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 111, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
+  /* line 112, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
 
   .info-img {
     padding-top: 0;
@@ -1359,7 +1361,7 @@ header {
   }
 }
 
-/* line 123, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
+/* line 124, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
 
 .info-img img {
   width: 450px;
@@ -1367,22 +1369,22 @@ header {
   border-radius: 500px;
 }
 
-@media screen and (min-width: 62.5em) {
-  /* line 123, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
+@media screen and (min-width: 56.25em) {
+  /* line 124, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
 
   .info-img img {
     width: 450px;
   }
 }
 
-/* line 136, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
+/* line 137, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
 
 .learn-more {
   display: none;
 }
 
 @media screen and (min-width: 40em) {
-  /* line 136, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
+  /* line 137, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
 
   .learn-more {
     display: block;
@@ -1396,13 +1398,13 @@ header {
   }
 }
 
-/* line 149, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
+/* line 150, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
 
 .learn-more:hover .icon-arrow-down {
   -webkit-transform: translateY(5px);
 }
 
-/* line 153, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
+/* line 154, /Users/dearty/www-milena/milena/source/css/modules/_section-hero.scss */
 
 .icon-arrow-down {
   background: url(/images/arrow-down.svg) 0 0 no-repeat;
@@ -1451,46 +1453,55 @@ header {
   position: relative;
 }
 
-/* line 32, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+/* line 34, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
 .section-title span:after {
   content: '';
   display: inline-block;
   vertical-align: middle;
-  width: 10%;
+  width: 5%;
   margin-left: 1em;
   height: 1px;
   background: #a0a0a0;
 }
 
-/* line 44, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+/* line 46, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
 .section-title span:before {
   content: '';
   display: inline-block;
   vertical-align: middle;
-  width: 10%;
+  width: 5%;
   margin-right: 1em;
   height: 1px;
   background: #a0a0a0;
 }
 
-/* line 59, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+/* line 61, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
 .section-title p {
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 14px;
+  color: #a0a0a0;
   text-transform: uppercase;
 }
 
-/* line 66, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+@media screen and (min-width: 56.25em) {
+  /* line 61, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+
+  .section-title p {
+    font-size: 16px;
+  }
+}
+
+/* line 72, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
 .education-list {
   padding: 2em;
 }
 
 @media screen and (min-width: 30em) {
-  /* line 66, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+  /* line 72, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
   .education-list {
     max-width: 700px;
@@ -1499,8 +1510,8 @@ header {
   }
 }
 
-@media screen and (min-width: 62.5em) {
-  /* line 66, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+@media screen and (min-width: 56.25em) {
+  /* line 72, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
   .education-list {
     display: table;
@@ -1513,8 +1524,8 @@ header {
   }
 }
 
-@media screen and (min-width: 62.5em) {
-  /* line 89, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+@media screen and (min-width: 56.25em) {
+  /* line 95, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
   .education-list-row {
     display: table-row;
@@ -1522,14 +1533,14 @@ header {
     height: 300px;
   }
 
-  /* line 94, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+  /* line 100, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
   .education-list-row:first-child {
     border-bottom: 1px solid #d8d8d8;
   }
 }
 
-/* line 101, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+/* line 107, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
 .education-item {
   position: relative;
@@ -1537,8 +1548,8 @@ header {
   transition: background 0.2s;
 }
 
-@media screen and (min-width: 62.5em) {
-  /* line 101, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+@media screen and (min-width: 56.25em) {
+  /* line 107, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
   .education-item {
     display: table-cell;
@@ -1546,14 +1557,14 @@ header {
     width: 50%;
   }
 
-  /* line 112, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+  /* line 118, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
   .education-item:first-child {
     border-right: 1px solid #d8d8d8;
   }
 }
 
-/* line 119, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+/* line 125, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
 .education-item p,
 .education-item h4 {
@@ -1561,8 +1572,8 @@ header {
   padding-right: 20px;
 }
 
-@media screen and (min-width: 62.5em) {
-  /* line 119, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+@media screen and (min-width: 56.25em) {
+  /* line 125, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
   .education-item p,
   .education-item h4 {
@@ -1571,21 +1582,21 @@ header {
   }
 }
 
-/* line 129, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+/* line 135, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
 .education-item p {
   font-size: 16px;
 }
 
-@media screen and (min-width: 62.5em) {
-  /* line 129, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+@media screen and (min-width: 56.25em) {
+  /* line 135, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
   .education-item p {
     text-align: left;
   }
 }
 
-/* line 138, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+/* line 144, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
 .education-item h4 {
   position: relative;
@@ -1595,8 +1606,8 @@ header {
   font-size: 20px;
 }
 
-@media screen and (min-width: 62.5em) {
-  /* line 138, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+@media screen and (min-width: 56.25em) {
+  /* line 144, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
   .education-item h4 {
     text-align: left;
@@ -1604,7 +1615,7 @@ header {
   }
 }
 
-/* line 150, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+/* line 156, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
 .icon:before {
   content: '';
@@ -1615,33 +1626,33 @@ header {
   height: 34px;
 }
 
-@media screen and (min-width: 62.5em) {
-  /* line 150, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+@media screen and (min-width: 56.25em) {
+  /* line 156, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
   .icon:before {
     left: 60px;
   }
 }
 
-/* line 165, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+/* line 171, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
 .icon-slowa:before {
   background: transparent url(/images/icon-slowa.svg) 0 0 no-repeat;
 }
 
-/* line 169, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+/* line 175, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
 .icon-osobowosc:before {
   background: transparent url(/images/icon-osobowosc.svg) 0 0 no-repeat;
 }
 
-/* line 173, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+/* line 179, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
 .icon-inwestycja:before {
   background: transparent url(/images/icon-inwestycja.svg) 0 0 no-repeat;
 }
 
-/* line 177, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
+/* line 183, /Users/dearty/www-milena/milena/source/css/modules/_section-poco.scss */
 
 .icon-rozmowa:before {
   background: transparent url(/images/icon-rozmowa.svg) 0 0 no-repeat;
@@ -1659,192 +1670,145 @@ header {
   background-size: cover;
 }
 
-/* line 19, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
-
-.headline {
-  text-align: center;
-}
-
-@media screen and (min-width: 62.5em) {
-  /* line 25, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+@media screen and (min-width: 56.25em) {
+  /* line 13, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
   .uslugi-container {
-    padding: 5em 0;
-  }
-}
-
-@media screen and (min-width: 62.5em) {
-  /* line 33, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
-
-  .wrap-uslugi {
-    max-width: 1000px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5em;
+    position: relative;
   }
 
-  /* line 37, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+  /* line 21, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
-  .wrap-uslugi:nth-of-type(2) {
-    background: #CC2D60;
+  .uslugi-container:after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 0;
+    left: -7px;
+    border-radius: 50%;
     background: #ff3878;
-    background: #ff3878 url(/images/kola3.svg) bottom -100px right -100px no-repeat;
-    -webkit-background-size: 300px;
-    background-size: 300px;
-    color: #fff;
-  }
-
-  /* line 47, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
-
-  .wrap-uslugi:nth-of-type(2) h4 {
-    color: #fff;
-  }
-
-  /* line 50, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
-
-  .wrap-uslugi:nth-of-type(2) .uslugi-box__headline {
-    border-right: 4px solid #fff;
-  }
-
-  /* line 53, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
-
-  .wrap-uslugi:nth-of-type(2) .rel:after {
-    background: #fff;
-  }
-
-  /* line 58, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
-
-  .wrap-uslugi:nth-of-type(2) .list li:before {
-    border-color: #fff;
   }
 }
 
-/* line 75, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+/* line 45, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
 .uslugi-box {
   display: block;
   padding: 2em 0;
 }
 
-@media screen and (min-width: 62.5em) {
-  /* line 75, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+@media screen and (min-width: 56.25em) {
+  /* line 45, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
   .uslugi-box {
-    display: table;
-    width: 100%;
+    border-left: 1px solid #e9d49c;
     padding: 0;
+    padding-bottom: 5em;
   }
 }
 
-@media screen and (min-width: 62.5em) {
-  /* line 92, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+@media screen and (min-width: 56.25em) {
+  /* line 60, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
   .rel {
     position: relative;
   }
 
-  /* line 95, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+  /* line 63, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
   .rel:after {
     content: '';
     width: 30px;
     height: 30px;
     position: absolute;
-    top: 30px;
-    right: -17px;
-    right: -33px;
+    top: 16px;
+    left: -16px;
     border-radius: 50%;
     background: #ff3878;
   }
 }
 
-/* line 114, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+/* line 77, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
 .uslugi-box__headline {
   text-align: center;
 }
 
-@media screen and (min-width: 62.5em) {
-  /* line 114, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+@media screen and (min-width: 56.25em) {
+  /* line 77, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
   .uslugi-box__headline {
-    display: table-cell;
-    position: relative;
-    vertical-align: top;
-    width: 220px;
-    text-align: right;
-    padding-right: 1em;
-    border-right: 4px solid #ff3878;
+    text-align: left;
   }
 }
 
-/* line 128, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+/* line 89, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
 .uslugi-box__headline h4 {
-  text-transform: uppercase;
-  font-size: 18px;
+  font-size: 24px;
+  font-family: "Merriweather", "Noto Serif", "Alegreya", "Crimson", "Merriweather", "PT Serif", Lora, serif;
   font-weight: 600;
   line-height: 1.2;
-  padding: 1em;
+  padding: 20px 40px 30px;
   border-bottom: 2px dotted #ccc;
-  border-top: 1px solid #ccc;
   border-top: 4px solid #fff;
 }
 
-@media screen and (min-width: 62.5em) {
-  /* line 128, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+@media screen and (min-width: 56.25em) {
+  /* line 89, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
   .uslugi-box__headline h4 {
-    padding-top: 35px;
-    border-bottom: none;
     border-top: none;
+    border-bottom: none;
   }
 }
 
-@media screen and (min-width: 62.5em) {
-  /* line 160, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+@media screen and (min-width: 56.25em) {
+  /* line 112, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
   .uslugi-box--first .rel:after {
     top: 0;
   }
 
-  /* line 163, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+  /* line 115, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
   .uslugi-box--first h4 {
     padding-top: 5px;
   }
-
-  /* line 167, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
-
-  .uslugi-box--first .uslugi-box__body {
-    padding-top: 2em;
-  }
 }
 
-/* line 174, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+/* line 125, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
 .uslugi-box__body {
   margin-top: 3em;
-}
-
-@media screen and (min-width: 62.5em) {
-  /* line 174, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
-
-  .uslugi-box__body {
-    display: table-cell;
-    margin-top: 0;
-    padding: 22px 1em 8em 5em;
-    padding: 4em 1em 4em 5em;
-  }
-}
-
-/* line 190, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
-
-.list {
-  padding-left: 1em;
-  max-width: 600px;
+  max-width: 650px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 195, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+@media screen and (min-width: 56.25em) {
+  /* line 125, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+
+  .uslugi-box__body {
+    margin-top: 0;
+    margin-left: 24px;
+    border: 1px solid #e9d49c;
+    padding: 2em 1em;
+  }
+}
+
+/* line 139, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+
+.list {
+  padding-left: 1em;
+}
+
+/* line 144, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
 .list li {
   position: relative;
@@ -1852,13 +1816,13 @@ header {
   margin-bottom: 1em;
 }
 
-/* line 199, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+/* line 148, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
 .list li:last-child {
   margin-bottom: 0;
 }
 
-/* line 202, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+/* line 151, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
 .list li:before {
   content: '';
@@ -1872,16 +1836,8 @@ header {
   border-radius: 500px;
 }
 
-/* line 223, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
-
-.list--uslugi {
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 @media screen and (min-width: 40em) {
-  /* line 227, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+  /* line 175, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
   .list--uslugi li {
     float: left;
@@ -1889,7 +1845,7 @@ header {
   }
 }
 
-/* line 235, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+/* line 183, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
 .li-img {
   display: block;
@@ -1900,7 +1856,7 @@ header {
   margin-bottom: .5em;
 }
 
-/* line 244, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+/* line 192, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
 .li-item:nth-of-type(1) .li-img {
   background: url(/images/icon-strony2.svg) center center no-repeat;
@@ -1908,7 +1864,7 @@ header {
   background-size: contain;
 }
 
-/* line 249, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+/* line 197, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
 .li-item:nth-of-type(2) .li-img {
   background: url(/images/icon-mail4.svg) center center no-repeat;
@@ -1916,7 +1872,7 @@ header {
   background-size: contain;
 }
 
-/* line 254, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+/* line 202, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
 .li-item:nth-of-type(3) .li-img {
   background: url(/images/icon-strony2.svg) center center no-repeat;
@@ -1924,7 +1880,7 @@ header {
   background-size: contain;
 }
 
-/* line 259, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
+/* line 207, /Users/dearty/www-milena/milena/source/css/modules/_section-uslugi.scss */
 
 .li-text {
   display: block;
@@ -1970,7 +1926,7 @@ header {
 /* line 1, /Users/dearty/www-milena/milena/source/css/modules/_section-proces.scss */
 
 .section-proces {
-  background: #fff;
+  background: #ebebeb;
 }
 
 /* line 1, /Users/dearty/www-milena/milena/source/css/modules/_section-klienci.scss */
@@ -1982,7 +1938,21 @@ header {
 /* line 1, /Users/dearty/www-milena/milena/source/css/modules/_section-kontakt.scss */
 
 .section-kontakt {
-  background: #fff;
+  background: #626262;
+}
+
+/* line 3, /Users/dearty/www-milena/milena/source/css/modules/_section-kontakt.scss */
+
+.section-kontakt .section-title {
+  background: #484848;
+  border-bottom: none;
+  color: #fff;
+}
+
+/* line 7, /Users/dearty/www-milena/milena/source/css/modules/_section-kontakt.scss */
+
+.section-kontakt .section-title h3 {
+  color: #fff;
 }
 
 /* line 1, /Users/dearty/www-milena/milena/source/css/modules/_tabs2.scss */

@@ -29,11 +29,13 @@ h1 {
 }
 
 h2 {
-	font-size:42px;
+	font-size:34px;
 	font-weight: 700;
 	text-shadow:0 1px 0 rgba(#eee,1);
-	@include mq($bp4) {
+	line-height: 1.1;
+	@include mq($bp5) {
 		font-size:50px;
+		font-size:40px;
 
 	}
 	
@@ -49,7 +51,7 @@ h3 {
 	// border-bottom: 4px dotted #b8b8b8;
 
 	@include mq($bp5){
-		font-size:40px;
+		font-size:34px;
 	}
 	// color:#fff;
 }
