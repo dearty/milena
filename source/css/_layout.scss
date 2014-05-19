@@ -7,16 +7,18 @@
 .content {
 	position: relative;
 	@include mq($bp3){	
-		height: 100%;
+		// height: 100%;
 		transition:all .5s;
 	}
 }
 
 .no-touch .content {
-	z-index:2;
-	top: 100%;
-	left: 0;
-	width: 100%;
+	@media screen and (min-width: $bp3) and (min-height :700px) {
+		z-index:2;
+		top: 100%;
+		left: 0;
+		width: 100%;
+	}
 }
 
 
@@ -40,52 +42,5 @@
 	}
 }
 
-.section {
-	// padding-bottom: 2em;
-	@include mq($bp3){
-		// padding-bottom: 5em;
-		
-	}
-
-}
-
-.section-title {
-	color:$primary-color;
-}
 
 
-
-
-.section-inner {
-	display: table;
-	padding: 0 .5em;
-	@include mq($bp3) {
-		margin-left: auto;
-		margin-right: auto;
-		// margin:0 auto; 
-		width: 100%;
-		max-width:1100px;
-		// padding-left: 0;
-		// padding-left:2em;
-		// padding-right: 2em;
-		padding-left: 30px;
-		padding-right: 30px;
-
-
-	}
-	@include mq($bp5) {
-		// padding-left:4em;
-		// padding-right: 4em;
-		
-		padding-left: 60px;
-		padding-right: 60px;
-		// margin-left: 60px;
-		// margin-right: 60px;
-	}	
-}
-
-
-.v-centered {
-	display: table-cell;
-	vertical-align: middle;
-}

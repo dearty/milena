@@ -1,6 +1,7 @@
 //=require "responsive-nav.js"
 //=require "fastclick.js"
 //=require "scroll.js"
+//=require "scroll_old.js"
 //=require "fixed-responsive-nav.js"
 
 //=require "tabs2.js"

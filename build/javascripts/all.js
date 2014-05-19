@@ -1485,6 +1485,29 @@ window.smoothScroll = (function (window, document, undefined) {
   };
 
 })(window, document);
+// if(!location.pathname.match('work')) {
+	$("[role=navigation] a, .scroll").click(function(){
+		var e;
+		return e = $("body").find($(this).attr("href").split("/").pop()), $("html, body").animate({scrollTop: e.offset().top - 70}, 750), !1;
+
+	});
+// }
+
+
+// $(function() {
+//   $("[role=navigation] a, .scroll").click(function() {
+//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+//       var target = $(this.hash);
+//       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+//       if (target.length) {
+//         $('html,body').animate({
+//           scrollTop: target.offset().top
+//         }, 750);
+//         return false;
+//       }
+//     }
+//   });
+// });
 /* =============================================
  *
  *   FIXED RESPONSIVE NAV
@@ -1663,77 +1686,81 @@ window.smoothScroll = (function (window, document, undefined) {
   }
 
 })();
- // tabbed content
-    // http://www.entheosweb.com/tutorials/css/tabs.asp
-    // $(".tab-content").hide();
-    // $(".tab-content:first").show();
+var Tabs = {
 
-    $(".tab-content").addClass('kupa');
-    $(".tab-content:first").removeClass('kupa').addClass('kupa1');    
+  tabsWrapClass:  '.effeckt-tabs-wrap',
+  tabsClass:      '.effeckt-tabs a.effeckt-tab',
+  tabContentClass:'.effeckt-tab-content',
 
+  init: function() {
 
-   // next prev controls
-    // var active = $('.active');
-    // var elements = $('.tabs li'), i = active.size() - 1;
-    var active = $('.active'), elements = $('.tabs li'), i=0;
+    this.initComponent();
+    this.bindUIActions();
 
+  },
+
+  initComponent: function() {
     
-    function move(direction) {
-        i = $('.active').index(); 
-        if (direction == 'forward') i = ++i % elements.length; // wrap around
-        if (direction == 'backward') i = --i % elements.length; // wrap around
-        elements.eq(i).click();
-      }
+    //keep a reference to this (Tabs) object.
+    var self = this;
 
-    $('.next').click(function(ev) {
-        ev.preventDefault();
-        move('forward');
-      });
-    $('.prev').click(function(ev) {
-        ev.preventDefault();
-        move('backward');
-      });
+    $(this.tabsWrapClass).each(function(){
 
-  /* if in tab mode */
-    $(".tabs li").click(function() {
-    
-      // $(".tab-content").hide();
-      $(".tab-content").removeClass('kupa1').addClass('kupa');
-      var activeTab = $(this).attr("rel"); 
-      // $("html, body").animate({ scrollTop: $('#section-help').offset().top }, 500);
-      // $("#"+activeTab).fadeIn(700);    //fadein
-      $("#"+activeTab).removeClass('kupa').addClass('kupa1');  
+      var $el             = $(this);
+      var effect          = $el.data('effeckt-type');
+      var tabContents     = $el.find(self.tabContentClass);
+      var firstTabContent = tabContents.first();
+      var tabs            = $el.find(self.tabsClass);
 
-      $(".tabs li").removeClass("active");
-      $(this).addClass("active");
+      tabs.removeClass('active').first().addClass('active');
+      tabContents.not(':eq(0)').addClass('effeckt-hide');
 
-      $(".tab-drawer-heading").removeClass("d-active");
-      $(".tab-drawer-heading[rel^='"+activeTab+"']").addClass("d-active");
-      
+      firstTabContent.addClass('effeckt-show');
+      tabContents.parent().height(firstTabContent.height());
+
     });
-  /* if in drawer mode */
-  $(".tab-drawer-heading").click(function() {
-      
-      // $(".tab-content").hide();
-       $(".tab-content").removeClass('kupa1').addClass('kupa');
 
-      var d_activeTab = $(this).attr("rel"); 
-      // $("#"+d_activeTab).slideDown(); //fadein
-      $("#"+d_activeTab).removeClass('kupa').addClass('kupa1');  
-    
-    $(".tab-drawer-heading").removeClass("d-active");
-      $(this).addClass("d-active");
-    
-    $(".tabs li").removeClass("active");
-    $(".tabs li[rel^='"+d_activeTab+"']").addClass("active");
-    $("html, body").animate({ scrollTop: $('.tab-container').offset().top - 50 }, 500);
+  },
+
+  bindUIActions: function() {
+
+    //keep a reference to this (Tabs) object.
+    var self = this;
+
+    $(this.tabsClass).on('click', function(e) {
+      e.preventDefault();
+      self.showTab(this);
     });
-  
-  
-  /* Extra class "tab_last" 
-     to add border to right side
-     of last tab */
-  // $('.tabs li').last().addClass("tab-last");
+
+  },
+
+  showTab: function(el) {
+
+    var tab         = $(el);
+    var tabsWrap    = tab.parents(this.tabsWrapClass);
+    var tabs        = tabsWrap.find(this.tabsClass);
+    var tabContents = tabsWrap.find(this.tabContentClass);
+    var effect      = tabsWrap.data('effeckt-type');
+    
+    //set active to this current clicked tab
+    tabs.removeClass('active');
+    tab.addClass('active');
+
+    var tabID = tab.attr('href');
+    var tabContent = tabContents.filter(tabID);
+
+    tabContents.removeClass('effeckt-show').addClass('effeckt-hide');
+    tabContent.addClass('effeckt-show');
+
+    //add parent height, just because of position: absolute;
+    tabContents.parent().height(tabContent.height());
+  }
+
+};
+
+$('.effeckt-tab-content').css('position','absolute');
+Tabs.init();
+
 
 
 

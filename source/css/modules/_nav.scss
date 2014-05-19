@@ -67,16 +67,18 @@ header {
   width: 100%;
   left: 0;
   top: 0;
-  border-bottom:1px solid #d8d8d8;
+  // height:70px;
+  // border-bottom:1px solid #d8d8d8;
+  border-bottom:1px solid #ddd;
   // box-shadow:0 2px 3px rgba(#000,.2);
 }
 
 .header--inner {
   @include mq($bp4){
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left:60px;
+    // max-width: 1100px;
+    // margin-left: auto;
+    // margin-right: auto;
+    // padding-left:60px;
     // padding-right: 40px  
   }
   
@@ -158,6 +160,10 @@ header {
   &:last-child a{
     // color:$primary-color;
   }
+  @include mq($bp3){
+    margin-left: 1em;
+
+  }
   @include mq($bp4) {
     display: inline-block;
     width: auto;
@@ -169,7 +175,8 @@ header {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   border-top: 1px solid white;
   text-decoration: none;
-  font-size:15px;
+  font-size:14px;
+  font-weight: 600;
   padding: 1em 0.5em;
   // color: #ccc;
   width: 100%;
@@ -179,9 +186,11 @@ header {
     color:$primary-color;
   }
   @include mq($bp4){ 
-    padding: 1em;
+    // padding: 0;
+    padding: 1em 0;
     text-align: center;
     border-top: 0;
+    // border-right:1px solid black;
     margin: 0;
   }
   span {

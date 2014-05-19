@@ -3,29 +3,64 @@ $align: left;
 .section-education {
 	background:#fff;
 	padding-bottom: 4em;
-	border-top: 1px solid #d8d8d8;
-	h3 {	
-		// padding:2em 0 1em;
-		text-align: $align;
-		white-space:pre-wrap;
-		line-height: 1.2;
-		// font-size:26px;
-		// font-size:32px;
-		position: relative;
-		text-align: center;
-		padding-bottom: 0
-		// border-top:8px solid #2d2d2d;
-		// border-bottom: 1px solid #d8d8d8;
-		// border-top:1px solid #d8d8d8;
-	}
+	border-top:1px solid #b8b8b8;
 }
 
-.section-education-title {
-	
-	// border-top:1px solid #d8d8d8;
-	
-	
-	
+.section-title {
+	border-bottom: 4px dotted #b8b8b8;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	overflow: hidden;
+	h3 {
+		// border-bottom: 1px solid black;
+		// padding-bottom: 20px;
+		position: relative;
+		font-weight: 600;
+
+	}
+	span {
+		display: block;
+		// font-family: $alt-font-family;
+		padding: 1em;
+		padding-bottom: 0;
+		font-size:12px;
+		color:#a0a0a0;
+		// text-transform: uppercase;
+		position: relative;
+
+		&:after {
+			content:'';
+			// position: absolute;
+			display: inline-block;
+			vertical-align: middle;
+			width: 10%;
+			margin-left:1em;
+			height:1px;
+			// bottom:12px;
+			// right: 0;
+			background:#a0a0a0;
+		}
+		&:before {
+			content:'';
+			display: inline-block;
+			vertical-align: middle;
+			// position: absolute;
+			width: 10%;
+			// left: 0;
+			margin-right:1em;
+			height:1px;
+			// bottom:12px;
+			background:#a0a0a0;
+		}
+
+		
+	}
+	p {
+		margin-bottom: 0;
+		font-size:16px;
+		text-transform: uppercase;
+	}
 }
 
 .education-list {
@@ -64,9 +99,6 @@ $align: left;
 }
 
 .education-item {
-	// margin:30px;
-	// padding-left: 30px;
-	// padding-right: 30px;
 	position: relative;
 	transition:background 0.2s;
 	&:hover {
@@ -75,10 +107,8 @@ $align: left;
 	}
 	@include mq($bp4) {
 		display: table-cell;
-		
 		vertical-align: top;
 		width: 50%;
-		// text-align: center;
 		&:first-child {
 			border-right:1px solid #d8d8d8;
 		}
@@ -97,14 +127,9 @@ $align: left;
 }
 
 .education-item p {
-	// font-family: $alt-font-family;
 	font-size:16px;
-	// color:#515151;
-	@include mq($bp4){
-		// max-width:350px;
-		
-		text-align: $align;
-		// margin:0 auto;		
+	@include mq($bp4){	
+		text-align: $align;	
 	}
 	
 
@@ -116,10 +141,6 @@ $align: left;
 	padding-top:40px;
 	padding-bottom: 20px;
 	font-size:20px;
-	// border-bottom:1px solid $primary-color;
-	// padding-left: 110px;
-	
-
 	@include mq($bp4) {
 		text-align: $align;
 		padding-left: 110px;
