@@ -4,6 +4,7 @@ $primary-color 					: #FF3878;
 $secondary-color 				: #3580b0;      //breadcrumb, tlo pod galerie, tlo pod liste produktow, box pod zaloguj sie, box pod lightbox 'zarejestruj', box pod przypomnij haslo, box pod komunikat, 
 $third-color 					: #E9D49C;
 $bg-color 						: #f0e7d3;
+$l-beige 							: #F1E1BF;
 
 
 $header-color 					: #3d3d3d;
@@ -50,7 +51,7 @@ $bp6 							: em(1440);
 // TYPOGRAPHY ================================================
 
 $font-family-serif 				: "Merriweather",'Noto Serif','Alegreya','Crimson','Merriweather','PT Serif' ,Lora, serif;
-$font-family-sans 				: 'Open Sans','Oswald','Crimson', 'Noto Sans','Open Sans','Open Sans',"Source Sans Pro",  sans-serif;
+$font-family-sans 				: 'Open Sans',  sans-serif;
 
 $base-font-family 				: $font-family-sans;
 $alt-font-family 				: $font-family-serif;

@@ -21,7 +21,7 @@ $align: left;
 		// border-bottom: 1px solid black;
 		// padding-bottom: 20px;
 		position: relative;
-		font-weight: 600;
+		font-weight: 700;
 
 	}
 	span {
@@ -31,7 +31,7 @@ $align: left;
 		// padding-top:.5em;
 
 		padding-bottom: 0;
-		font-size:12px;
+		font-size:14px;
 		// color:#a0a0a0;
 		// text-transform: uppercase;
 		position: relative;
@@ -129,7 +129,6 @@ $align: left;
 }
 
 .education-item p {
-	font-size:16px;
 	@include mq($bp4){	
 		text-align: $align;	
 	}
@@ -140,10 +139,10 @@ $align: left;
 .education-item h4 {
 	font-family: $base-font-family;
 	position: relative;
-	font-weight: 600;
+	font-weight: 700;
 	padding-top:40px;
 	padding-bottom: 20px;
-	font-size:20px;
+	font-size:18px;
 	@include mq($bp4) {
 		text-align: $align;
 		padding-left: 110px;
