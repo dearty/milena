@@ -1,7 +1,10 @@
 .section-kontakt {
+	height:700px;
 	background: lighten(#484848,10);
+	background:url(/images/milena-04d.jpg) center center no-repeat;
+	background-size:cover;
 	.section-title {
-		background:#484848;
+		// background:#484848;
 		border-bottom: none;
 		color:#fff;
 		h3 {

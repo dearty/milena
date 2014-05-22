@@ -1,8 +1,8 @@
 var Tabs = {
 
-  tabsWrapClass:  '.effeckt-tabs-wrap',
-  tabsClass:      '.effeckt-tabs a.effeckt-tab',
-  tabContentClass:'.effeckt-tab-content',
+  tabsWrapClass:  '.tabs-wrap',
+  tabsClass:      '.tab',
+  tabContentClass:'.tab-content',
 
   init: function() {
 
@@ -26,6 +26,7 @@ var Tabs = {
 
       tabs.removeClass('active').first().addClass('active');
       tabContents.not(':eq(0)').addClass('effeckt-hide');
+      // tabContents.not(':eq(0)').hide();
 
       firstTabContent.addClass('effeckt-show');
       tabContents.parent().height(firstTabContent.height());
@@ -38,11 +39,21 @@ var Tabs = {
 
     //keep a reference to this (Tabs) object.
     var self = this;
-
-    $(this.tabsClass).on('click', function(e) {
-      e.preventDefault();
-      self.showTab(this);
-    });
+    if (Modernizr.touch) {   
+      $(this.tabsClass).on('click', function(e) {
+        e.preventDefault();
+        self.showTab(this);
+      });
+    }
+    else {
+      $(this.tabsClass).on('mouseover', function(e) {
+        e.preventDefault();
+        self.showTab(this);
+      });
+      $(this.tabsClass).on('click', function(e) {
+        e.preventDefault();
+      });
+    }
 
   },
 
@@ -70,5 +81,8 @@ var Tabs = {
 
 };
 
-$('.effeckt-tab-content').css('position','absolute');
+$('.tab-content').addClass('absolute');
+
 Tabs.init();
+
+

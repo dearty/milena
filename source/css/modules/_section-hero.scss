@@ -10,17 +10,20 @@
 	// background:url(/images/tlo2d.jpg) center center no-repeat;
 	// background:url(/images/tlo8d.jpg) center center no-repeat;
 	background:url(/images/tlo9.jpg) center center no-repeat;
+	background:url(/images/tlo9d.jpg) center center no-repeat;
+	// background:url(/images/milena-01b.jpg) left center no-repeat;
+	// background:url(/images/milena-04b.jpg) left center no-repeat;
 	background-size:cover;
 	box-shadow:0 1px 3px rgba(#000,.3);
 	@include mq($bp3){
-		padding-top: 100px;
+		padding-top: 70px;
 		padding-bottom:50px;
 		vertical-align: middle;
 
 		//full
-		display: table;
-		width: 100%;
-		height:100%;
+		// display: table;
+		// width: 100%;
+		// height:100%;
 	}
 }
 
@@ -28,50 +31,41 @@
 	@include mq($bp3){
 
 		//full
-		display: table-cell;
-		vertical-align: middle;
-		width: 100%;
+		// display: table-cell;
+		// vertical-align: middle;
+		// width: 100%;
 	}
 }
 
 .hero {
-	// border-top:1px solid #E9D49C;
-	border-bottom:1px solid #E9D49C;
-	border:1px solid #E9D49C;
-	// border-radius:4px;
+	// border-bottom:1px solid #E9D49C;
 	padding:60px 20px;
+	padding:20px 20px 60px;
+	padding: 20px;
 	position: relative;
-	&:before {
-		// content:'';
-		// position: absolute;
-		// top: -1%;
-		// left: -.5%;
-		// border:1px solid #d8d8d8;
-		// width:101%;
-		// height: 102%;
-
-	}
-
+	border:1px solid $third-color;
 	@include mq($bp4){
-		padding-left:40px;
-		padding-right: 40px;
+		padding-left:80px;
+		padding-right: 80px;
 	}
 }
+
+
 
 .no-touch .section-info {
 
 	@media screen and (min-width: $bp3) and (min-height :700px)
 	{
-		position: fixed;
-		z-index:2;
-		top: 0;
-		left: 0;
+		// position: fixed;
+		// z-index:2;
+		// top: 0;
+		// left: 0;
 	}
 }
 
 
 .info-text {
-	font-size:16px;
+	// font-size:16px;
 	@include mq($bp3){
 		display: table-cell;
 		width: 60%;	
@@ -79,7 +73,8 @@
 		padding-right: 1em;
 	}
 	@include mq($bp5){
-		font-size:18px;
+		// font-size:18px;
+		line-height: 1.7;
 	}
 	
 	p:nth-of-type(1) {
@@ -105,16 +100,17 @@
 }
 
 .highlight {
-	font-weight: 600;
+	font-weight: 700;
 
 }
 
 .info-img {
 	position: relative;
 	padding-top: 2em;
-	
+	text-align: center;
 
 	@include mq($bp3) {
+		text-align: left;
 		padding-top: 0;
 		display: table-cell;
 		width: 40%;
@@ -122,9 +118,12 @@
 		vertical-align: middle;
 	}
 	img {
-		width:450px;
+		width: 250px;
 		height:auto;
 		border-radius:500px;
+		@include mq($bp3){
+			width: 450px;
+		}
 		@include mq($bp4){
 			width:450px;
 
@@ -139,11 +138,15 @@
 	@include mq($bp3){
 		display: block;
 		padding: 1em;
-		padding-left: 40px;
-		border-bottom:1px solid #E9D49C;
+		padding-left: 20px;
+		// border-bottom:1px solid #E9D49C;
 		color:$secondary-color;
 		font-weight: 600;
 		transition:all .5s;
+
+	}
+	@include mq($bp4){
+		padding-left: 80px;
 	}	
 }
 

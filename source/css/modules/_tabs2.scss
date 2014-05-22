@@ -1,9 +1,20 @@
+.absolute {
+  @include mq($bp4){
+    position: absolute;
+  }
+}
+
+.show {
+  display: block !important;
+
+}
+
 .effeckt-show {
   visibility: visible;
 }
 
 // Tabs
-ul.effeckt-tabs {
+.tabs--pomoc {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -25,42 +36,41 @@ ul.effeckt-tabs {
   }
 }
 
-.effeckt-tabs-container {
-  // padding:40px;
+.tabs-container--pomoc {
   margin: 20px;
-  // margin-bottom: 20px;
-  // border:1px solid #DDD;
-
-  .effeckt-tab-content {
-    top: 20px;
+  .tab-content--pomoc {
+    // top: 20px;
   }
 }
 
 
 ////
-.effeckt-tabs-wrap {
+.tabs-wrap {
   position: relative;
   width:60%;
-  margin:3em auto;
+  margin:0 auto;
+  padding:5em 0;
 
-  ul.effeckt-tabs {
+
+  .tabs {
     overflow: hidden; // used to be clearfix
   }
 
-  .effeckt-tabs-container {
+  .tabs-container {
     position: relative;
     transition: all 500ms ease-in-out;
+    // padding:20px;
 
-    .effeckt-tab-content {
+    .tab-content {
       // position: absolute;
-      padding:20px;
+      // padding:20px;
       transition: all 500ms ease-in-out;
     }
   }
 
 
   &[data-effeckt-type='scale'] {
-    .effeckt-tab-content {
+    .tab-content {
       &.effeckt-hide {
         transform: scale(0.9);
         -webkit-transform: scale(0.9);
@@ -76,7 +86,7 @@ ul.effeckt-tabs {
   }
 
   &[data-effeckt-type='scale-up'] {
-    .effeckt-tab-content {
+    .tab-content {
       &.effeckt-hide {
         transform: scale(1.1);
         -webkit-transform: scale(1.1);
@@ -92,9 +102,9 @@ ul.effeckt-tabs {
   }
 
   &[data-effeckt-type='slide-left'] {
-    .effeckt-tabs-container{
+    .tabs-container{
       overflow:hidden;
-      .effeckt-tab-content {
+      .tab-content {
         &.effeckt-hide {
           transform: translateX(-100%);
           -webkit-transform: translateX(-100%);
@@ -111,9 +121,9 @@ ul.effeckt-tabs {
   }
 
   &[data-effeckt-type='slide-right'] {
-    .effeckt-tabs-container{
+    .tabs-container{
       overflow:hidden;
-      .effeckt-tab-content {
+      .tab-content {
         &.effeckt-hide {
           transform: translateX(100%);
           -webkit-transform: translateX(100%);
@@ -130,9 +140,9 @@ ul.effeckt-tabs {
   }
 
   &[data-effeckt-type='slide-up'] {
-    .effeckt-tabs-container{
+    .tabs-container{
       overflow:hidden;
-      .effeckt-tab-content {
+      .tab-content {
         &.effeckt-hide {
           transform: translateY(-100%);
           -webkit-transform: translateY(-100%);
@@ -149,9 +159,9 @@ ul.effeckt-tabs {
   }
 
   &[data-effeckt-type='slide-down'] {
-    .effeckt-tabs-container{
+    .tabs-container{
       overflow:hidden;
-      .effeckt-tab-content {
+      .tab-content {
         &.effeckt-hide {
           transform: translateY(100%);
           -webkit-transform: translateY(100%);
@@ -168,9 +178,9 @@ ul.effeckt-tabs {
   }
 
   &[data-effeckt-type='flip'] {
-    .effeckt-tabs-container{
+    .tabs-container{
       overflow:hidden;
-      .effeckt-tab-content {
+      .tab-content {
         &.effeckt-hide {
           transform: rotateY(-90deg) scale(1.1);
           -webkit-transform: rotateY(-90deg) scale(1.1);

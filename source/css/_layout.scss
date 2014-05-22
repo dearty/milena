@@ -1,8 +1,4 @@
-.section-proces,
-.section-klienci,
-.section-kontakt {
-	height: 500px;
-}
+
 
 .content {
 	position: relative;
@@ -14,10 +10,10 @@
 
 .no-touch .content {
 	@media screen and (min-width: $bp3) and (min-height :700px) {
-		z-index:2;
-		top: 100%;
-		left: 0;
-		width: 100%;
+		// z-index:2;
+		// top: 100%;
+		// left: 0;
+		// width: 100%;
 	}
 }
 

@@ -1,4 +1,5 @@
 //=require "responsive-nav.js"
+//=require "sticky.js"
 //=require "fastclick.js"
 //=require "scroll.js"
 //=require "scroll_old.js"

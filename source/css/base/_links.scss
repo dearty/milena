@@ -11,7 +11,8 @@ a {
 }
 
 a:hover {
-	color:$primary-color;
+	// color:$primary-color;
+	color:inherit;
 	// text-decoration: underline;
 }
 

@@ -31,7 +31,7 @@ h1 {
 h2 {
 	font-size:34px;
 	font-weight: 700;
-	text-shadow:0 1px 0 rgba(#eee,1);
+	// text-shadow:0 1px 0 rgba(#eee,1);
 	line-height: 1.1;
 	@include mq($bp5) {
 		font-size:50px;
@@ -44,29 +44,29 @@ h2 {
 
 h3 {
 
-	font-size:28px;
+	font-size:30px;
+	// font-size:40px;
 	// padding-top: 50px;
 	// padding-bottom: 50px;
 
 	// border-bottom: 4px dotted #b8b8b8;
 
 	@include mq($bp5){
-		font-size:34px;
+		font-size:36px;
+		// font-size:50px;
 	}
 	// color:#fff;
 }
 
 
 h4 {
-	font-size:16px;
-	// text-transform: uppercase;
-	// margin-bottom: 1em;
-	
-	// font-weight: 600;
-	// color:$secondary-color;
-	// color: #3d6d77;
-	// font-weight: bold;
-	font-family: $base-font-family;
+		font-size:20px;
+		font-family: $alt-font-family;
+		font-weight: 600;	
+		line-height: 1.2;
+		@include mq($bp4){
+			font-size:24px;
+		}
 }
 
 h5 {
