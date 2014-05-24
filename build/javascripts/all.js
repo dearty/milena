@@ -526,9 +526,14 @@ var stickyNav = function(){
 	}
 }
 //stickyNav();
-$(window).scroll(debounce(function(event){
-	stickyNav();
-},250));
+if($(window).width() > 500) {
+	$(window).scroll(debounce(function(event){
+		stickyNav();
+	},250));
+}
+else {
+	$('header').addClass('sticky');
+}
 // $(window).scroll(function(){
 // 	stickyNav();
 // });

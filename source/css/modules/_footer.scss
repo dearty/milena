@@ -1,0 +1,66 @@
+.footer {
+	text-align: center;
+	padding:1em 0;
+	background:#fafafa;
+	border-bottom:10px solid #111;
+}
+
+.footer-body {
+	display: table;
+	width: 100%;
+	li {
+		font-size:12px;
+		color:#aaa;
+		@include mq($bp3){
+			display: table-cell;
+			vertical-align: middle;
+			width: 50%;
+		}
+	}
+}
+
+
+
+.copy {
+	position: relative;
+
+	@include mq($bp3){
+		text-align: left;
+	}
+	span {
+		display: block;
+		background:url(/images/logo-footer.svg) 0 0 no-repeat;
+		width:150px;
+		height: 19px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1em;
+		@include mq($bp3){
+			margin-left: 0;
+		}
+	}
+}
+
+
+.by {
+	position: relative;
+	margin-top: 1em;
+	@include mq($bp3){
+		// float: right;
+		text-align: right;
+	}
+
+	a {
+		color:$secondary-color;
+		margin-left: 10px;
+		display: inline-block;
+		vertical-align: middle;
+		width:50px;
+		height: 50px;
+		background:url(/images/dearty-logo.svg) 0 0 no-repeat;
+		background-size:cover;
+		// font: 0/0 a;
+		// text-shadow: none;
+		// color: transparent;
+	}
+}

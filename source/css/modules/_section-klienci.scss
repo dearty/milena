@@ -1,4 +1,97 @@
 .section-klienci {
-	background: #fff;
-	height:700px;
+	// background: #fff;
+
 }
+
+.clients {
+	padding:3em 0;
+	text-align: center;
+	max-width:800px;
+	margin-left: auto;
+	margin-right: auto;
+	@include mq($bp2){
+		padding:8em 0;
+	}
+	li {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		margin-bottom: 3em;
+		@include mq($bp2){
+			width: 50%;
+		}
+		@include mq($bp4){
+			width: 33.3333%;
+		}
+
+	}
+}
+
+.icon-clients{
+	background:url(/images/klienci/sprite.png) 0 0 no-repeat;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+
+.icon-allevo {
+	background-position: -1px -1px;
+	background-position: -268px 0;
+	width: 115px;
+	height: 37px;
+	&:hover {
+		// background-position: -1px -1px;
+	}
+}
+
+.icon-floslek {
+	background-position:-4px -44px;
+	background-position:-271px -43px;
+	width: 192px;
+	height: 43px;
+	&:hover {
+		// background-position:-4px -44px;
+	}
+}
+
+.icon-ergo {
+	background-position: -1px -101px;
+	background-position: -268px -101px;
+	width: 213px;
+	height: 26px;
+	&:hover {
+		// background-position: -1px -101px;
+	}
+}
+
+.icon-fit {
+	background-position: 0 -140px;
+	background-position: -268px -139px;
+	width: 81px;
+	height: 114px;
+	&:hover {
+		// background-position: 0 -140px;
+	}
+}
+
+.icon-gosp {
+	background-position:-1px -258px;
+	background-position:-268px -258px;
+	width: 260px;
+	height: 34px;
+	&:hover {
+		// background-position:-1px -258px;
+	}
+}
+
+.icon-dragon {
+	background-position: -1px -296px;
+	background-position: -268px -296px;
+	width: 130px;
+	height: 96px;
+	&:hover {
+		// background-position: -1px -296px;
+	}
+}
+

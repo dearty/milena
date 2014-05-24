@@ -1,21 +1,16 @@
 .section-info {
-	padding-top: 100px;
-	padding-bottom: 50px;
-	// border-bottom:1px solid #3d3d3d;
-	
+	padding-top: 80px;
+	padding-bottom: 20px;
 	position: relative;
 	width: 100%;
-	// margin-left: auto;
-	// margin-right: auto;
-	// background:url(/images/tlo2d.jpg) center center no-repeat;
-	// background:url(/images/tlo8d.jpg) center center no-repeat;
 	background:url(/images/tlo9.jpg) center center no-repeat;
 	background:url(/images/tlo9d.jpg) center center no-repeat;
-	// background:url(/images/milena-01b.jpg) left center no-repeat;
-	// background:url(/images/milena-04b.jpg) left center no-repeat;
+
 	background-size:cover;
 	box-shadow:inset 0 -1px 3px rgba(#000,.3);
 	@include mq($bp3){
+		padding-top: 100px;
+		padding-bottom: 50px;
 		padding-top: 70px;
 		padding-bottom:50px;
 		vertical-align: middle;
@@ -65,12 +60,15 @@
 
 
 .info-text {
-	// font-size:16px;
 	@include mq($bp3){
-		display: table-cell;
+		// float: none;
+		// display: table-cell;
+		// display: inline-block;
+		float: left;
 		width: 60%;	
 		vertical-align: middle;
 		padding-right: 1em;
+		padding-top: 30px;
 	}
 	@include mq($bp5){
 		// font-size:18px;
@@ -97,6 +95,9 @@
 			color:$primary-color;
 		}
 	}
+	// @include mq($bp3){
+	// 	padding-top: 20px;
+	// }
 }
 
 .highlight {
@@ -105,14 +106,21 @@
 }
 
 .info-img {
+	// float: left;
+	// width: 100%;
+
 	position: relative;
-	padding-top: 2em;
+	padding-bottom: 2em;
 	text-align: center;
 
 	@include mq($bp3) {
+		// float: none;
+		float: right;
 		text-align: left;
-		padding-top: 0;
-		display: table-cell;
+		// padding-top: 0;
+		padding-bottom: 0;
+		// display: table-cell;
+		// display: inline-block;
 		width: 40%;
 		vertical-align: top;
 		vertical-align: middle;
