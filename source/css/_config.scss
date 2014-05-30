@@ -22,10 +22,10 @@ $btn-sec-color 					:#c2c2c2;
 
 
 $body-color 					: #Fff;//#EEF2EA; 
-$text-color 					: #333;
+$text-color 					: lighten(#453B2B,10);
 
 $link-color 					: #5f5f5f;
-$heading-color 					: #333;
+$heading-color 					: #453B2B;
 
 $base-font-size 				: 16; //16px
 // $base-line-height 				: 1.5; //24px
@@ -38,7 +38,7 @@ $border-radius 					: 0; //0.35em
 
 // MEDIA QUERIES
 
-$bp1 							: em(480);
+$bp1 							: em(360); //480
 $bp2 							: em(580);  
 $bp3 							: em(640);  
 
@@ -53,7 +53,7 @@ $bp6 							: em(1440);
 // TYPOGRAPHY ================================================
 
 $font-family-serif 				: "Merriweather",'Noto Serif','Alegreya','Crimson','Merriweather','PT Serif' ,Lora, serif;
-$font-family-sans 				: 'Open Sans',  sans-serif;
+$font-family-sans 				: 'Open Sans',Nunito,'Open Sans',  sans-serif;
 
 $base-font-family 				: $font-family-sans;
 $alt-font-family 				: $font-family-serif;

@@ -5,13 +5,11 @@
 
   <head>
     <%= partial 'partials/head/head-meta' %>
-  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
-  <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'> -->
-<!-- <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'> -->
-
-<!-- <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700' rel='stylesheet' type='text/css'> -->
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   
+    
     <%= stylesheet_link_tag "style" %>
     <%= partial '/partials/head/conditional' %> 
     <script src="/javascripts/modernizr.js"></script>
@@ -20,20 +18,22 @@
   </head>
 
   <body>
-      <%= partial 'partials/components/header2' %>
+    <div class="container">
+      <%= partial 'partials/components/header' %>
       <!-- *****************   content   ********************** -->
       
         <div class="content">
              <%= partial 'partials/components/01-info-section' %> 
              <%= partial 'partials/components/02-education-section' %>
              <%= partial 'partials/components/03-services-section' %>
-             <%= partial 'partials/components/04-help-section2' %>
+             <%= partial 'partials/components/04-help-section' %>
              <%= partial 'partials/components/05-services-proces' %>
              <%= partial 'partials/components/06-services-klienci' %>
              <%= partial 'partials/components/07-services-kontakt' %>
         </div>
     <!-- *****************   end of content    **************** -->  
       <%= partial 'partials/components/footer' %>
+    </div>  
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <%= javascript_include_tag 'all' %>
 

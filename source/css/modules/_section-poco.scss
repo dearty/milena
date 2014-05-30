@@ -1,46 +1,3 @@
-.section-title {
-	border-bottom: 4px dotted #b8b8b8;
-	border-bottom: 1px solid $third-color;
-	text-align: center;
-	padding-top: 30px;
-	padding-bottom: 20px;
-	// overflow: hidden;
-	color:#333;
-	h3 {
-		position: relative;
-		font-weight: 700;
-
-	}
-	span {
-		display: block;
-		padding: 1em;
-		padding-bottom: 0;
-		font-size:14px;
-		position: relative;
-		&:after,
-		&:before {
-			content:'';
-			display: inline-block;
-			vertical-align: middle;
-			width: 5%;
-			height: 1px;
-			background:#333;
-		}
-
-		&:after {
-			margin-left:1em;
-		}
-		&:before {
-			margin-right:1em;
-		}
-	}
-	p {
-		margin-bottom: 0;
-		font-size:14px;
-		text-transform: uppercase;
-	}
-}
-
 .education-list {
 	padding: 2em 0;
 	@include mq($bp1){
@@ -57,7 +14,6 @@
 		margin-bottom: 4em;
 		background:url(/images/kola.svg) center center no-repeat;
 		border-collapse:collapse;
-		
 	}
 }
 
@@ -70,7 +26,6 @@
 			border-bottom: 1px solid #d8d8d8;
 		}
 	}
-	
 }
 
 .education-item {
@@ -88,7 +43,6 @@
 .education-item p,
 .education-item h4 {
 	padding-left: 50px;
-	padding-right: 20px;
 	@include mq($bp4){
 		padding-left: 60px;
 		padding-right:20px;
@@ -108,7 +62,7 @@
 	}
 }
 
-.icon:before {
+.education-item h4:before {
 	content:'';
 	position: absolute;
 	left: 0;
@@ -118,21 +72,4 @@
 	@include mq($bp4){
 		left: 60px;	
 	}
-}
-
-
-.icon-slowa:before {
-	background: transparent url(/images/icon-slowa.svg) 0 0  no-repeat;
-}
-
-.icon-osobowosc:before {
-	background: transparent url(/images/icon-osobowosc.svg) 0 0  no-repeat;
-}
-
-.icon-inwestycja:before {
-	background: transparent url(/images/icon-inwestycja.svg) 0 0  no-repeat;
-}
-
-.icon-rozmowa:before {
-	background: transparent url(/images/icon-rozmowa.svg) 0 0  no-repeat;
 }

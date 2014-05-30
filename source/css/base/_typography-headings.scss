@@ -31,7 +31,7 @@ h1 {
 h2 {
 	font-size:34px;
 	font-weight: 700;
-	// text-shadow:0 1px 0 rgba(#eee,1);
+	
 	line-height: 1.1;
 	@include mq($bp5) {
 		font-size:50px;
@@ -50,7 +50,9 @@ h3 {
 	// padding-bottom: 50px;
 
 	// border-bottom: 4px dotted #b8b8b8;
-
+	@include mq($bp3){
+		// font-size:30px;
+	}
 	@include mq($bp5){
 		font-size:36px;
 		// font-size:50px;

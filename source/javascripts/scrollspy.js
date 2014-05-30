@@ -1,5 +1,5 @@
 var lastId,
-    topMenu = $("#nav ul"),
+    topMenu = $(".nav-collapse ul"),
     // topMenuHeight = topMenu.outerHeight()+40,
     // All list items
     menuItems = topMenu.find("a"),
@@ -13,7 +13,7 @@ var lastId,
 $(window).scroll(function(){
    // Get container scroll position
    // var fromTop = $(this).scrollTop()+topMenuHeight;
-   var fromTop = $(this).scrollTop()+100;
+   var fromTop = $(this).scrollTop()+200;
    // Get id of current scroll item
    var cur = scrollItems.map(function(){
      if ($(this).offset().top < fromTop)
@@ -27,7 +27,7 @@ $(window).scroll(function(){
        lastId = id;
        // Set/remove active class
        menuItems
-         .parent().removeClass("nav-active")
-         .end().filter("[href=#"+id+"]").parent().addClass("nav-active");
+         .parent().removeClass("active")
+         .end().filter("[href=#"+id+"]").parent().addClass("active");
    }                   
 });

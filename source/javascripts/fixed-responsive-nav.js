@@ -28,7 +28,7 @@
     FastClick.attach(document.body);
 
     // Init smooth scrolling
-    smoothScroll.init();
+    // smoothScroll.init();
 
     // Init Responsive Nav
     var navigation = responsiveNav(".nav-collapse", {
@@ -74,39 +74,39 @@
     }, false);
 
     // Highlight active link on the navigation
-    var selectActiveMenuItem = function (i) {
-      forEach(links, function (i, el) {
-        links[i].parentNode.className = "";
-      });
-      links[i].parentNode.className = "active";
-    };
+    // var selectActiveMenuItem = function (i) {
+    //   forEach(links, function (i, el) {
+    //     links[i].parentNode.className = "";
+    //   });
+    //   links[i].parentNode.className = "active";
+    // };
 
     // Highlight active link when scrolling
-    var wasNavigationTapped = false;
-    window.addEventListener("scroll", function () {
+    // var wasNavigationTapped = false;
+    // window.addEventListener("scroll", function () {
 
-      // Determine viewport and body size
-      var top = window.pageYOffset,
-        body = document.body,
-        html = document.documentElement,
-        viewport = window.innerHeight,
-        bodyheight = Math.max(
-          body.scrollHeight,
-          body.offsetHeight,
-          html.clientHeight,
-          html.scrollHeight,
-          html.offsetHeight
-        );
+    //   // Determine viewport and body size
+    //   var top = window.pageYOffset,
+    //     body = document.body,
+    //     html = document.documentElement,
+    //     viewport = window.innerHeight,
+    //     bodyheight = Math.max(
+    //       body.scrollHeight,
+    //       body.offsetHeight,
+    //       html.clientHeight,
+    //       html.scrollHeight,
+    //       html.offsetHeight
+    //     );
 
       // For each content link, when it's in viewport, highlight it
-      if (!wasNavigationTapped) {
-        forEach(content, function (i, loc) {
-          if ((loc > top && (loc < top + 300 || (top + viewport) >= bodyheight))) {
-            selectActiveMenuItem(i);
-          }
-        });
-      }
-    }, false);
+    //   if (!wasNavigationTapped) {
+    //     forEach(content, function (i, loc) {
+    //       if ((loc > top && (loc < top + 300 || (top + viewport) >= bodyheight))) {
+    //         selectActiveMenuItem(i);
+    //       }
+    //     });
+    //   }
+    // }, false);
 
     // Close navigation when tapping the mask under it
     mask.addEventListener("click", function (e) {
@@ -124,10 +124,10 @@
     // Select the right navigation item when tapping the logo
     document.querySelector(".logo").addEventListener("click", function (e) {
       e.preventDefault();
-      wasNavigationTapped = true;
+      // wasNavigationTapped = true;
 
       // Select first navigation item
-      selectActiveMenuItem(0);
+      // selectActiveMenuItem(0);
 
       // Close navigation
       navigation.close();
@@ -142,35 +142,35 @@
     }, false);
 
     // When a navigation item is tapped, select it and begin scrolling
-    forEach(links, function (i, el) {
-      links[i].addEventListener("click", function (e) {
-        e.preventDefault();
-        wasNavigationTapped = true;
+    // forEach(links, function (i, el) {
+    //   links[i].addEventListener("click", function (e) {
+    //     e.preventDefault();
+    //     wasNavigationTapped = true;
 
         // Select right navigation item (we are passing which one to select "i")
-        selectActiveMenuItem(i);
+        // selectActiveMenuItem(i);
 
         // Show the URL of the section on the address bar
-        var thisID = this.getAttribute("href").replace("#", ""),
-          pane = document.getElementById(thisID);
+        // var thisID = this.getAttribute("href").replace("#", ""),
+        //   pane = document.getElementById(thisID);
 
         // If the URL isn't "#home", change it
-        if (thisID !== "home") {
-          pane.removeAttribute("id");
-          location.hash = "#" + thisID;
-          pane.setAttribute("id", thisID);
+        // if (thisID !== "home") {
+        //   pane.removeAttribute("id");
+        //   location.hash = "#" + thisID;
+        //   pane.setAttribute("id", thisID);
 
         // If the URL is "#home", remove hash from the URL
-        } else {
-          if (history.pushState) {
-            history.pushState("", document.title, window.location.pathname);
-          }
-        }
+        // } else {
+        //   if (history.pushState) {
+        //     history.pushState("", document.title, window.location.pathname);
+        //   }
+        // }
 
         // Clear wasNavigationTapped check
-        clearTapCheck();
-      }, false);
-    });
+    //     clearTapCheck();
+    //   }, false);
+    // });
 
   }
 

@@ -60,24 +60,23 @@
   FIXED HEADER
 --------------------------------------------- */
 
-header {
-  // background: #fff;
-  // position: fixed;
+.js header {
   position: absolute;
   z-index: 3;
   width: 100%;
   left: 0;
   top: 0;
-  transition:all 1s;
+  // border-bottom: 2px solid #Fff;
+  // box-shadow: inset 0 -1px 0 darken(#F0E3D2,5);
+  
   background:#fff;
-  // height:70px;
-  // border-bottom:1px solid #d8d8d8;
-  // border-bottom:1px solid #9AB531;
-  // box-shadow:0 2px 3px rgba(#000,.2);
-  @include mq($bp3){
-    background:transparent;
+  @include mq($bp4){
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, transparent 85%);
+    background:#fff;
+    background:rgba(#fff,.8);
   }
 }
+
 
 @-webkit-keyframes slideIn {
     from { 
@@ -95,7 +94,7 @@ header {
       to { opacity: 1; }
 }
 
-.sticky{
+.js .sticky{
   position: fixed;
   background:#fff;
   border-bottom:1px solid $third-color;
@@ -103,16 +102,10 @@ header {
 }
 
 .header--inner {
-  // border-bottom: 1px solid #9AB531;
-  // border-bottom: 1px solid $third-color;
   @include mq($bp4){
-    padding-left:10px;
-    padding-right: 10px;
-    // max-width: 1100px;
-    // margin-left: auto;
-    // margin-right: auto;
-    // padding-left:60px;
-    // padding-right: 40px  
+    // padding-left:10px;
+    // padding-right: 10px;
+    // border-bottom: 4px solid $l-beige;
   }
   
 }
@@ -125,10 +118,7 @@ header {
 .logo {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   text-decoration: none;
-  padding: 0 20px;
   float: left;
-  // display: inline-block;
-  // vertical-align: middle;
   img{
     height: 65px;  
     padding: 1em 0;
@@ -197,7 +187,7 @@ header {
   &:last-child a{
     // color:$primary-color;
   }
-  @include mq($bp3){
+  @include mq($bp4){
     margin-left: 1em;
 
   }
@@ -210,11 +200,11 @@ header {
 
 .nav-collapse a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  border-top: 1px solid white;
+  border-top: 1px solid #ebebeb;
   text-decoration: none;
   font-size:12px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   padding: 1em 0.5em;
   // color: #ccc;
   width: 100%;
@@ -260,27 +250,31 @@ header {
   text-indent: -300px;
   position: relative;
   overflow: hidden;
-  width: 60px;
-  height: 55px;
+  width: 65px;
+  height: 65px;
   float: right;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.nav-toggle.active {
+  background:transparent;
 }
 
 .nav-toggle:before {
-  color: #fff; /* Edit this to change the icon color */
-  font: normal 38px/55px "responsivenav"; /* Edit font-size (28px) to change the icon size */
-  font:normal 28px/55px;
-  text-transform: none;
-  text-align: center;
+  content:'';
   position: absolute;
-  content: "\2261"; /* Hamburger icon */
-  text-indent: 0;
-  speak: none;
-  width: 100%;
-  left: 0;
+  display: inline-block;
   top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin:auto;
+  background-position:0 -40px;
+  width: 30px;
+  height: 30px;
 }
 
 .nav-toggle.active:before {
-  font-size: 24px;
-  content: "\78"; /* Close icon */
+  background-position:-32px -37px;
 }

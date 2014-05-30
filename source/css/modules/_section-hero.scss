@@ -3,37 +3,16 @@
 	padding-bottom: 20px;
 	position: relative;
 	width: 100%;
-	background:url(/images/tlo9.jpg) center center no-repeat;
-	background:url(/images/tlo9d.jpg) center center no-repeat;
-
+	background:#FBF8E9 url(/images/bg-hero.jpg) center center no-repeat;
 	background-size:cover;
-	box-shadow:inset 0 -1px 3px rgba(#000,.3);
 	@include mq($bp3){
-		padding-top: 100px;
-		padding-bottom: 50px;
-		padding-top: 70px;
-		padding-bottom:50px;
+		padding-top: 75px;
 		vertical-align: middle;
-
-		//full
-		// display: table;
-		// width: 100%;
-		// height:100%;
 	}
-}
 
-.v-centered {
-	@include mq($bp3){
-
-		//full
-		// display: table-cell;
-		// vertical-align: middle;
-		// width: 100%;
-	}
 }
 
 .hero {
-	// border-bottom:1px solid #E9D49C;
 	padding:60px 20px;
 	padding:20px 20px 60px;
 	padding: 20px;
@@ -45,25 +24,8 @@
 	}
 }
 
-
-
-.no-touch .section-info {
-
-	@media screen and (min-width: $bp3) and (min-height :700px)
-	{
-		// position: fixed;
-		// z-index:2;
-		// top: 0;
-		// left: 0;
-	}
-}
-
-
 .info-text {
 	@include mq($bp3){
-		// float: none;
-		// display: table-cell;
-		// display: inline-block;
 		float: left;
 		width: 60%;	
 		vertical-align: middle;
@@ -71,7 +33,6 @@
 		padding-top: 30px;
 	}
 	@include mq($bp5){
-		// font-size:18px;
 		line-height: 1.7;
 	}
 	
@@ -95,9 +56,6 @@
 			color:$primary-color;
 		}
 	}
-	// @include mq($bp3){
-	// 	padding-top: 20px;
-	// }
 }
 
 .highlight {
@@ -106,21 +64,13 @@
 }
 
 .info-img {
-	// float: left;
-	// width: 100%;
-
 	position: relative;
 	padding-bottom: 2em;
 	text-align: center;
-
 	@include mq($bp3) {
-		// float: none;
 		float: right;
 		text-align: left;
-		// padding-top: 0;
 		padding-bottom: 0;
-		// display: table-cell;
-		// display: inline-block;
 		width: 40%;
 		vertical-align: top;
 		vertical-align: middle;
@@ -135,45 +85,6 @@
 		@include mq($bp4){
 			width:450px;
 
-		}
-		
+		}	
 	}
 }
-
-
-.learn-more {
-	display: none;
-	@include mq($bp3){
-		display: block;
-		padding: 1em;
-		padding-left: 20px;
-		// border-bottom:1px solid #E9D49C;
-		color:$secondary-color;
-		font-weight: 600;
-		transition:all .5s;
-
-	}
-	@include mq($bp4){
-		padding-left: 80px;
-	}	
-}
-
-.learn-more:hover .icon-arrow-down {
-	-webkit-transform:translateY(5px);
-}
-
-.icon-arrow-down {
-	background:url(/images/arrow-down.svg) 0 0  no-repeat;
-	width: 24px;
-	height:23px;
-	display: inline-block;
-	// margin-right: 20px;
-	margin-left: 20px;
-	vertical-align: middle;
-	transition:all .5s;
-}
-
-
-
-
-
