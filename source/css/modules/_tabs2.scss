@@ -14,64 +14,24 @@
 
 .show {
   display: block !important;
-
 }
 
 .effeckt-show {
   // visibility: visible;
 }
 
-// Tabs
-// .tabs--pomoc {
-//   margin: 0;
-//   padding: 0;
-//   list-style: none;
-
-//   li {
-//     float: left;
-//     margin-right:2px;
-
-//     a {
-//       display: block;
-//       padding: 10px 15px;
-//       color: #383838;
-//       background-color: #EEEEEE;
-
-//       &.active, &:hover {
-//         background-color: #E8E8E8;
-//       }
-//     }
-//   }
-// }
-
-.tabs-container--pomoc {
-  // margin: 20px;
-  .tab-content--pomoc {
-    // top: 20px;
-  }
-}
-
-
-
-
 .tabs-wrap {
   position: relative;
   margin:0 auto;
-
-
-
   .tabs {
     overflow: hidden; // used to be clearfix
   }
-
   .tabs-container {
     position: relative;
+    // transition: height 300ms ease-in-out;
     transition: height 300ms ease-in-out;
-    // transition-delay: 0.3s;
-    // padding:20px;
-
     .tab-content {
-      transition: all 350ms ease-in-out;
+      transition: all 300ms ease-in-out;
     }
   }
 

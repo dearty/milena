@@ -1,7 +1,7 @@
 //=require "responsive-nav.js"
 //=require "sticky.js"
 //=require "fastclick.js"
-//=require "scroll_old.js"
+//=require "scroll.js"
 //=require "fixed-responsive-nav.js"
 //=require "scrollspy.js"
 //=require "tabs2.js"

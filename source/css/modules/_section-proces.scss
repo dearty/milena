@@ -2,66 +2,35 @@
 	position: relative;
 	background:#F9F5EA;
 	@include mq($bp4){
-		// background:url(/images/new3.jpg) center center no-repeat;
 		background:url(/images/bg-proces.jpg) center center no-repeat;
 		background-size:cover;
 	}
 	.section-title {
 		position: relative;
 		z-index: 1;
-		
-		// background: linear-gradient(to bottom, rgba(#000, 0.1) 0%, transparent 85%);
-		
 	}
-	.ct {
-		// overflow: hidden;
-		// padding-top: 3em;
-		// padding-bottom: 6em;
-		@include mq($bp4){
-			// padding-top: 1em;
-			// padding-bottom: 3em;
-		}
-	}
-
 }
 
 .section-body {
-	// margin-top: 1em;
-	// margin-bottom: 1em;
-
 	@include mq($bp4){
-		// background: url(/images/kola2.svg) center -40px center no-repeat;
-		// background-size:1200px;
 		padding:5em 0;	
-		// border:1px solid $third-color;
-		// overflow: hidden;
 	}
-	
 }
 
 
-.tabs-wrap--proces {
+.js .tabs-wrap--proces {
 	width: 100%;
 	padding-top: 3em;
 	text-align: center;
 	position: relative;
 	z-index:1;
-	
 	@include mq($bp3) {
 		width: 80%
 	}
-	// width: 100%;
-	// max-width:600px;
-	// width: 60%;
-	
 	@include mq($bp4){
-		// margin-right: 0;
 		width: 100%;
 		max-width:770px;
-		// margin-right: 0;
 		padding: 120px 0;
-		// margin-top: 5em;
-		// margin-bottom: 5em;
 	}
 	@include mq($bp5b){
 		margin-right: 0;
@@ -74,14 +43,9 @@
 	}
 }
 .tab-proces {
-
 	display: inline-block;
-	// position: relative;
 	&:last-of-type i{
 		margin-right: 0;
-	}
-	@include mq($bp4) {
-		// position: absolute;
 	}
 	span {
 		display: none;
@@ -92,21 +56,24 @@
 			line-height: 46px;
 			text-align: center;
 			font-weight: 700;
-			// background:$l-beige;
-			// border:2px solid $primary-color;
 			border:2px solid #555;
 			text-transform: uppercase;
 			font-size:14px;
 			letter-spacing: 0.05em;
-			border-radius:3px;
-			// box-shadow:0 1px 1px rgba(#000,.2);
-			// text-shadow: 0 1px 0 #fff;
-			// color:darken($l-beige,40);
-			// color:$primary-color;
 			color:#555;
 		}
 	}
 }
+
+.no-js .tab-proces {
+	display: none;
+}
+
+.no-js .tab-content--proces {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 .js .tab-proces i {
 				font-style:normal;
@@ -116,15 +83,12 @@
 				display: block;
 				margin-right: 10px;
 				position: relative;
-				// position: absolute;
 				width: 44px;
 				height: 44px;
 				background:#F9F4ED;
-				// border:2px solid $primary-color;
 				border:2px solid #555;
-				// background:$l-beige;
+				border-radius:500px;
 				border-radius:50%;
-				// color:$primary-color;
 				color:#555;
 				z-index:1;
 				@include mq($bp2){
@@ -139,12 +103,10 @@
 					position: absolute;
 					height:0;
 					width: 0;
-					pointer-events: none;
-					
+					pointer-events: none;		
 					left:50%;
 					border-style:solid;
 					transition:all .5s;
-					// top: 0;
 					bottom:-34px;
 				}
 
@@ -160,27 +122,12 @@
 					border-width: 0 15px 12px 15px;
 					border-color:  transparent;
 				}
-				&:before {
-					// content:'';
-					// position: absolute;
-					// bottom: -32px;
-					// width: 0;
-					// height: 0;
-					// border-style: solid;
-					// border-width: 0 14px 14px 14px;
-					// left: 50%;
-					// margin-left: -14px;
-					// border-color: transparent;
-					// transition:all .5s;
-				}
 }
 
 .tab-proces.active {
 	span {
 		background:$primary-color;
 		color:#fff;
-		// text-shadow:none;
-		// box-shadow:none;
 		border-color:$primary-color;
 	}
 	i {
@@ -204,88 +151,54 @@
 	}
 }
 
-
-
-.tabs-container--proces {
-	// padding-top: 30px;
+.js .tabs-container--proces {
 	padding:30px;
 	margin-top:30px;
-	// background:#fff;
 	position: relative;
 	border-top: 4px solid #fff;
-	// min-height: 200px;
 	@include mq($bp4){
 		background:#fff;
 		border-top: 0;
-		// background:transparent;
 		border-radius:50%;
 		width: 480px !important;
 		max-width:none;
 		height: 480px !important;
-		// box-shadow:0 0 10px rgba(#000,.5) inset;
-		// border:1px solid #eee;
 		padding: 0;
 		margin-top: 0;
-		// z-index:1;
 		&:after {
 			position: absolute;
 			content:'';
-			background:darken(#F7EFE5,1);
-			// border:1px solid darken(#F7EFE5,5);
-			border-radius:50%;
-			width:560px;
-
+			// background:darken(#F7EFE5,1);
+			// border-radius:50%;
+			// width:560px;
 
 			//polowa
 			width:280px;
 			border-radius: 0 560px 560px 0;
 			margin-left: 280px;
-			// border-right:2px solid $primary-color; 
 			background:darken(#F7EEE4,5);
 			//
-
 			height:560px;
 			top: -40px;
 			left: -40px;
 			z-index:-1;
 		}
-		&:before {
-			// position: absolute;
-			// background:#eee;
-			// content:'';
-			// border-radius:50%;
-			// width:950px;
-			// height: 950px;
-			// top: -240px;
-			// left: -42px;
-			// // border:5px solid #d8d8d8;
-			// z-index:-1;
-		}
 	}
-
 }
 
 .tab-content--proces {
-		// display: none;
 		width: 100%;
-		// width: 400px;
-		// background:#fff;
 		padding:2em 1em;
 		text-align: left;
-
 	@include mq($bp4){
-		// display: block;
 		padding: 0;
 		width: 320px;
 		height: 300px;
-		// background:none;
-
 		top: 80px;
 		left: 50%;
 		margin-left: -160px;
 		text-align: center;
 	}
-
 }
 
 .tab-content--proces,
@@ -298,11 +211,6 @@
 		margin-bottom: 1em;
 		white-space: pre-wrap;
 		color:$primary-color;
-		// text-align: center;
-
-		@include mq($bp4){
-			// padding:0 .5em .2em;
-		}
 	}
 	p {
 		line-height: 1.8;
@@ -318,35 +226,12 @@
 	}
 }
 
-
-
-.js .tabs-circle {
-	@include mq($bp4){
-		// width:480px;
-		// height: 480px;
-		// position: relative;
-		// &:after {
-		// 	position: absolute;
-		// 	content:'';
-		// 	background: url(/images/proces6.svg) center center no-repeat;
-		// 	background-size:cover;
-		// 	width:560px;
-		// 	height:560px;
-		// 	top: -40px;
-		// 	left: -40px;
-		// }
-	}
-}
-
-
-
 .tab-proces:nth-of-type(1) {
 	@include mq($bp4){
 		left: 240px; //polowa containera kola
 		margin-left: -100px;
 		top: 0;
 		i {
-			// left: 80px;
 			left:50%;
 			margin-left: -22px;
 			bottom: -55px;
@@ -356,7 +241,6 @@
 
 .tab-proces:nth-of-type(2) {	
 	@include mq($bp4){
-		// right: 100px;
 		right: 70px;
 		top: 150px;
 		i {
@@ -368,7 +252,6 @@
 
 .tab-proces:nth-of-type(3) {	
 	@include mq($bp4){
-		// right: 33px;
 		right: 0;
 		top:50%;
 		margin-top:-25px;
@@ -382,7 +265,6 @@
 
 .tab-proces:nth-of-type(4) {	
 	@include mq($bp4){
-		// right: 100px;
 		right: 70px;
 		bottom:150px;
 		i {

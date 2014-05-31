@@ -5,66 +5,43 @@ h4,
 h5,
 h6 {
 	color: $heading-color;
-	// text-transform: uppercase;
-	font-weight: 400;
-	// font-weight: 600;
-	// font-weight: bold;
-	// font-style:italic;
+	font-weight: 700;
 	font-family: $alt-font-family;
 	line-height: 1;
 	text-rendering: optimizeLegibility;
-	// transform: rotate(-0.0000000001deg);
 	// -webkit-font-smoothing: antialiased;
 	// -moz-osx-font-smoothing: grayscale;
-	// text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-	
 }
 
 
 h1 {
 	font-size:40px;
-
-
-	// letter-spacing:.02em;
 }
 
 h2 {
 	font-size:34px;
-	font-weight: 700;
-	
 	line-height: 1.1;
 	@include mq($bp5) {
-		font-size:50px;
 		font-size:40px;
-
-	}
-	
-	
+	}		
 }
 
 h3 {
-
-	font-size:30px;
-	// font-size:40px;
-	// padding-top: 50px;
-	// padding-bottom: 50px;
-
-	// border-bottom: 4px dotted #b8b8b8;
+	font-size:26px;
+	line-height: 0.8;
 	@include mq($bp3){
-		// font-size:30px;
+		font-size:30px;
+		line-height: 1;
 	}
 	@include mq($bp5){
 		font-size:36px;
-		// font-size:50px;
 	}
-	// color:#fff;
 }
 
 
 h4 {
 		font-size:20px;
 		font-family: $alt-font-family;
-		font-weight: 600;	
 		line-height: 1.2;
 		@include mq($bp4){
 			font-size:24px;
@@ -73,16 +50,6 @@ h4 {
 
 h5 {
 	font-size:em(16);
-	// @include mq($bp3b){
-	// 	font-size:em(14);
-	// }
-	// @include mq($bp4){
-	// 	// font-size:em(24);
-	// }
-	// @include mq($bp5){
-	// 	font-size:em(16);
-	// }
-
 }
 
 

@@ -24,6 +24,13 @@
   zoom: 1;
 }
 
+.no-js .nav-collapse {
+  clear: left;
+  @include mq($bp4){
+    clear: none;
+  }
+}
+
 .nav-collapse.opened {
   max-height: 9999px;
 }

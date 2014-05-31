@@ -1,8 +1,8 @@
 .section-help {
   .section-body {
-    padding:3em 0;
+      padding:2em 0;  
     @include mq($bp4){
-      padding:7em 0;
+      padding:4em 0;
       max-width:900px;
       margin-left: auto;
       margin-right: auto;
@@ -17,12 +17,14 @@
 .tabs-wrap--pomoc {
     display: table;
     width: 100%;
-    // max-width: 900px;
-    // padding:3em 0;
     z-index:1;
+    @include mq($bp3){ 
+      border-bottom:1px solid $third-color;  
+      padding-top: 0;
+      padding-bottom: 5em;
+    }
     @include mq($bp4){
-      // padding:10em 0;
-      padding:2em 1em;
+      padding:2em 1em 5em; 
       border-top:1px solid $third-color;  
       border-bottom:1px solid $third-color;  
     }
@@ -31,22 +33,19 @@
 .tabs--pomoc {
     display: table;
     width: 100%;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     border-bottom: 1px solid $third-color;
     padding-bottom: 1em;
   @include mq($bp4){ 
     border-bottom: none;
     padding-bottom: 0;
     display: table-cell;
-    width: 250px;
+    width: 300px;
     margin-bottom: 0;
-    padding-right: 80px;
-    padding-left: 0;
    }
 }
 
 .tabs-container--pomoc {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   @include mq($bp3){
@@ -54,10 +53,7 @@
   }
   @include mq($bp4){
     display: table-cell;
-    width: 80%;
-    // max-width: 500px;
-
-
+    width: auto;
   }
 }
 
@@ -75,20 +71,18 @@
   @include mq($bp3) {
     display: table-cell;
     vertical-align: middle;
-    height: 80px;
+    height: 65px;
     width:33.3333%;
     font-size:14px;
     text-align: center;
-    padding: .5em;
-    // letter-spacing: 0.03em;
-    // color:$primary-color;
+    padding:5px;
     color:#555;
     white-space:pre-wrap;
     text-transform: uppercase;
     a {
       display: table;
-      border:1px solid #555;
-      border-radius:3px;
+      border:1px solid darken(#FEFAF7,5);
+      background:#FEFAF7;
       width: 100%;
       height: 100%; 
       span {
@@ -100,7 +94,7 @@
 
   @include mq($bp4){
     display: table;
-    width: 230px;
+    width: 250px;
     a {
       display: table-cell;
       vertical-align: middle;
@@ -111,102 +105,12 @@
   }
 }
 
-
-
-
-// .d-active:after {
-//   content: '';
-//   position: absolute;
-//   bottom: -24px;
-//   border: solid transparent;
-//   height: 0;
-//   width: 0;
-//   position: absolute;
-//   pointer-events: none;
-//   border-color: transparent;
-//   border-top-color: $primary-color;
-//   border-width: 12px;
-//   left: 50%;
-//   margin-left: -12px;
-// }
-
 .tabs--pomoc .active {
-  // background:#EADEC8;
   background:$primary-color;
   border-color:$primary-color;
   color:#fff;
-  // color: $primary-color;
-  // font-weight: 700;
   position: relative;
-    // &:before {
-    //     content: '';
-    //     position: absolute;
-    //     bottom: -24px;
-    //     border: solid transparent;
-    //     height: 0;
-    //     width: 0;
-    //     position: absolute;
-    //     pointer-events: none;
-    //     border-color: transparent;
-    //     border-top-color: $primary-color;
-    //     border-width: 12px;
-    //     left: 50%;
-    //     margin-left: -12px;
-    // }
-
-  @include mq($bp3){
-    // &:before {
-    //     content: '';
-    //     position: absolute;
-    //     // right: -16px;
-    //     right: 50%;
-    //     margin-right: -15px;
-    //     border-style: solid;
-    //     height: 0;
-    //     width: 0;
-    //     position: absolute;
-    //     pointer-events: none;
-    //     border-color: transparent;
-    //     border-top-color: $third-color;
-    //     border-width: 12px 15px 0 15px;
-    //     bottom: -12px;
-    // }
-  }
-  @include mq($bp4){
-        &:after,
-        &:before {
-          content:'';
-          position: absolute;
-          height:0;
-          width: 0;
-          pointer-events: none;
-          
-          left:50%;
-          border-style:solid;
-          transition:all .5s;
-          // top: 0;
-          bottom:-34px;
-        }
-
-        &:before {
-          margin-left: -19px;
-          border-width: 0 19px 16px 19px;
-          border-color:  transparent;
-        }
-
-        &:after {
-          margin-left: -15px;
-          margin-bottom: -2px;
-          border-width: 0 15px 12px 15px;
-          border-color:  transparent;
-        }
-
-
-  }
 }
-
-
-
 
 
 @media screen and (max-width: $bp3) {
@@ -261,7 +165,6 @@
         border-color: transparent;
         border-top-color: $primary-color;
         border-width: 10px 12px 0 12px;
-         // border-width:12px;
         left: 50%;
         margin-left: -12px;
     }

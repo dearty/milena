@@ -1,27 +1,18 @@
 <!DOCTYPE html>
-<!--[if IE 8]>      <html class="oldie"> <![endif]-->
-<!--[if lte IE 9]>      <html class="ie9"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js">
 
   <head>
     <%= partial 'partials/head/head-meta' %>
-  <link href='http://fonts.googleapis.com/css?family=Merriweather:700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  
-    
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag "style" %>
-    <%= partial '/partials/head/conditional' %> 
-    <script src="/javascripts/modernizr.js"></script>
-
+    <%= partial '/partials/head/conditional' %>
+    <%= partial  '/partials/head/head' %> 
 
   </head>
-
   <body>
     <div class="container">
       <%= partial 'partials/components/header' %>
-      <!-- *****************   content   ********************** -->
-      
         <div class="content">
              <%= partial 'partials/components/01-info-section' %> 
              <%= partial 'partials/components/02-education-section' %>
@@ -31,11 +22,13 @@
              <%= partial 'partials/components/06-services-klienci' %>
              <%= partial 'partials/components/07-services-kontakt' %>
         </div>
-    <!-- *****************   end of content    **************** -->  
       <%= partial 'partials/components/footer' %>
     </div>  
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <%= javascript_include_tag 'all' %>
+    <script>
+    head.js("/javascripts/modernizr.custom.js","//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js", "/javascripts/all.js");
+    </script>
 
+  <!--  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <%= javascript_include_tag 'all' %> -->
   </body>
 </html>

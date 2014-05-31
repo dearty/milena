@@ -1,9 +1,16 @@
 .section-kontakt {
 	position: relative;
 	background: lighten(#484848,10);
-	background:url(/images/bg-kontakt.jpg) center center no-repeat;
-	// background:url(/images/new1.jpg) center center no-repeat;
+	background:url(/images/bg-kontakt_small.jpg) right center no-repeat;
 	background-size:cover;
+	@include mq($bp2){
+		background:url(/images/bg-kontakt_medium.jpg) right bottom no-repeat;
+		background-size:cover;
+	}
+	@include mq($bp4){
+		background:url(/images/bg-kontakt.jpg) center center no-repeat;
+		background-size:cover;
+	}
 	.section-title {
 		color:#fff;
 		h3 {
@@ -13,12 +20,15 @@
 }
 
 .section-kontakt-body {
-	padding:6em 0;
+	padding:3em 0 6em;
 	
 	@include mq($bp1){
 		width: 75%;
 	}
 	@include mq($bp3){
+		padding-top: 6em;
+	}
+	@include mq($bp4){
 		width: 50%;
 	}
 	@include mq($bp5){

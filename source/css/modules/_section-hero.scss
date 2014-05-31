@@ -3,9 +3,11 @@
 	padding-bottom: 20px;
 	position: relative;
 	width: 100%;
-	background:#FBF8E9 url(/images/bg-hero.jpg) center center no-repeat;
+	background:#FBF8E9 url(/images/bg-hero_small.jpg) center center no-repeat;
 	background-size:cover;
 	@include mq($bp3){
+		background:#FBF8E9 url(/images/bg-hero.jpg) center center no-repeat;
+		background-size:cover;
 		padding-top: 75px;
 		vertical-align: middle;
 	}

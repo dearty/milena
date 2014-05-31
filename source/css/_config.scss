@@ -52,8 +52,8 @@ $bp6 							: em(1440);
 
 // TYPOGRAPHY ================================================
 
-$font-family-serif 				: "Merriweather",'Noto Serif','Alegreya','Crimson','Merriweather','PT Serif' ,Lora, serif;
-$font-family-sans 				: 'Open Sans',Nunito,'Open Sans',  sans-serif;
+$font-family-serif 				: Merriweather, "Palatino Linotype", "Book Antiqua", Palatino,serif;
+$font-family-sans 				: 'Open Sans',Verdana,sans-serif;
 
 $base-font-family 				: $font-family-sans;
 $alt-font-family 				: $font-family-serif;
